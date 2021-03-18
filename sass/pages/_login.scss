@@ -1,0 +1,125 @@
+.loginSignup{
+    background-color: $bg_color;
+    height: 95vh;
+    .loginSignup__container{
+        max-width: $signup_login_width;
+        margin: auto;
+        padding: 10rem 2rem;
+
+
+        .loginSignup_text{
+            padding: 100px 0 0;
+            h2{
+                font-size: 4.5rem;
+                font-family: $logo-font; 
+                color: #1877f2;
+            }
+            p{
+                font-size: 2.8rem;
+                color: #1c1e21;
+                line-height: 3.2rem;
+                font-weight: 500;
+
+            }
+        }
+
+        .loginSignup_form{
+            box-shadow: $login_box_shadow;
+            padding: 3rem;
+            margin: 1.5rem 0 0;
+            background-color: #fff;
+            border-radius: 1rem;
+            transition: all .3s;
+
+            &:hover {
+                box-shadow: $login_box_shadow-secondary;
+            }
+            form{
+                
+                 
+                input::placeholder,
+                input{
+                    font-size: 1.6rem;
+                    margin-bottom: 1rem;
+                }
+                input:focus{
+                    box-shadow: unset;
+                }
+                
+                input{
+                    padding: 1rem 1.6rem;
+                }
+                input[type="submit"]{
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                }
+                .forgotten{
+                    text-align: center;
+                    .forgottent_link{
+                        color: #1877f2;
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                        text-decoration: none;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+
+                    }
+                    .new_account{
+                        font-size: 17px;
+                        font-weight: 600;
+                        text-decoration: none;
+                        color: #fff;
+                        text-transform: capitalize;
+                        padding: .7rem 1rem;
+                        margin:1.5rem 0 -1.5rem; 
+                        box-shadow: $login_box_shadow;
+                        width: 20rem;
+                        text-align: center;
+                    }
+                }
+
+                .gender{
+                    .input-group-text{
+                        label{
+                            width: 80%;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+            // form end
+
+            // modal 
+            .modal-header{
+                h2{
+                    font-size: 2rem;
+                    color: #162643;
+                    font-weight: 600;
+                }
+            }
+            .modal-body{
+                p{
+                    color: #162643;
+                    font-size: 1.7rem;
+                    font-weight: 500;
+                }
+            }
+            .modal-footer{
+                button{
+                    font-size: 1.6rem;
+                    border-radius: .5rem;
+                }
+                .cancel_btn{
+                    background: #d8dde6;
+                    transition: all .2s;
+
+                    &:hover{
+                        background: #c6ccd6; 
+                    }
+                }
+            }
+        }
+    }
+}
