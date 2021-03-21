@@ -1,0 +1,91 @@
+// signup header start
+.headerSignup{
+    background-color: $header_bg_secondary;
+    background-image: linear-gradient($header_bg_primary, $header_bg_secondary);
+    border-bottom: 1px solid $header_bg_dark;
+
+    &__container{
+        max-width: $signup_login_width;
+        margin: auto;
+
+        .signup_logo{
+            display: flex; 
+            align-items: center;
+            height: 100%;
+            a{
+                text-decoration: none;
+                font-family: $logo-font;
+                font-size: 3rem;
+                color: #fff;
+
+            }
+        }
+        // form start
+        form{
+            padding: 1.5rem 0;
+
+            .signup_phone{
+                label{
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    color: #fff;
+                    margin: 0 0 .7rem 0;
+
+                }
+                input{
+                    width: 100%;
+                    border: 1px solid #1d2a5b;
+                    color: #1c1e21;
+                    background-color: #fff;
+                    outline: none;
+                    padding: 3px;
+                }
+            }
+
+            .signup_password{
+
+                label{
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    color: #fff;
+                    margin: 0 0 .7rem 0;
+                }
+                input{
+                    width: 100%;
+                    border: 1px solid #1d2a5b;
+                    color: #1c1e21;
+                    background-color: #fff;
+                    outline: none;
+                    padding: 3px;
+                }
+                a{
+                    font-size: 1.2rem;
+                    color: #bfe2ff;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    transition: all .2s;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+
+            .signup_login{
+
+                input{ 
+                    background-color: #4267b2;  
+                    border: 1px solid #29487d;
+                    font-size: 12px;
+                    font-weight: bold;
+
+                }
+            }
+
+        }
+        // form end
+ 
+    }
+}
+// signup header end

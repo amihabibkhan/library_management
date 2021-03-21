@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="font/fontawesome/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet"> 
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+
+         <!-- login part start -->
+         <div class="loginSignup">
+             <div class="loginSignup__container container">
+                 <div class="row">
+                     <div class="col-lg-7">
+                        <div class="loginSignup_text">
+                            <h2>Ourbook</h2>
+                            <p>আমার সোনার বাংলা আমি তোমায় ভালোবাসি। চিরদিন তোমার আকাশ  তোমার বাতাস...</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-5">
+                        <div class="loginSignup_form">
+                            <form action="#">
+                                <input type="text" class="form-control" placeholder="ইমেইল অথবা মোবাইল নাম্বার">
+                                <input type="password" class="form-control" placeholder="পাসওয়ার্ড">
+                                <input type="submit" class="form-control btn-primary" value="লগইন">
+                                <div class="forgotten">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="forgottent_link">পাসওয়ার্ড ভূলে গেছেন?</a>
+                                    <hr>
+                                    <a href="sign-up.html" class="new_account btn btn-success">নুতন একাউন্ট তৈরি করুন</a>
+                                    
+                     
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content p-3">
+                                            <div class="modal-header">
+                                            <h2 class="modal-title" id="staticBackdropLabel">আপনার একাউন্ট খুঁজুন</h2>
+                                            </div>
+                                            <div class="modal-body my-3">
+                                                <p class="text-start mb-4">আপনার একাউন্টটি খুজে পেতে আপনার ইমেইল অথবা মোবাইল  নাম্বার দিন</p>
+                                                <input type="text" class="form-control" placeholder="মোবাইল নাম্বার অথবা ইমেইল">
+                                            </div>
+                                            <div class="modal-footer pt-3">
+                                            <button type="button" class="btn btn-light cancel_btn hovered" data-bs-dismiss="modal">বাতিল</button>
+                                            <button type="button" class="btn btn-primary">খুঁজুন</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+  
+
+                                </div>
+                                
+                            </form>
+                        </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- login part end -->
+       
+     
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

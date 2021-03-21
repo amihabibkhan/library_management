@@ -1,0 +1,43 @@
+
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Library management
+    Template URL: http://www.something.com
+    Description: Book related site.
+    Author: DU WEB TEAM
+    Author URI: #
+    License: GNU General Public License version 3.0
+    License URI: http://www.gnu.org/licenses/gpl-3.0.html
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+    1. Typography
+    2. Header Area
+        2.1 Menu Area
+        2.2 Welcome Text
+        2.3 Social Media
+    3. Getting Started
+    4. Design Area
+    5. Community Area
+    6. Subscribe Area
+    7. Download Area
+    8. Footer Area
+
+-----------------------------------------------------------------------------------*/
+
+html{
+    font-size: 62.5%;
+}
+p,a,span,i,label{
+    font-size: $default;
+}
+body{
+    background: $bg_color;
+    font-family : 'bangla-font';
+}
+// bangla font
+@font-face{
+    font-family : 'bangla-font';
+    src: url('../font/HindSiliguri-Regular.ttf') format('truetype');
+}

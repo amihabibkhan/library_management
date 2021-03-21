@@ -1,0 +1,22 @@
+{
+  "name": "library_management",
+  "version": "1.0.0",
+  "description": "library management",
+  "main": "index.js",
+  "scripts": {
+    "test": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saidulislam49/library_management.git"
+  },
+  "author": "Du web team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saidulislam49/library_management/issues"
+  },
+  "homepage": "https://github.com/saidulislam49/library_management#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

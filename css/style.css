@@ -1,0 +1,770 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Library management
+    Template URL: http://www.something.com
+    Description: Book related site.
+    Author: DU WEB TEAM
+    Author URI: #
+    License: GNU General Public License version 3.0
+    License URI: http://www.gnu.org/licenses/gpl-3.0.html
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+    1. Typography
+    2. Header Area
+        2.1 Menu Area
+        2.2 Welcome Text
+        2.3 Social Media
+    3. Getting Started
+    4. Design Area
+    5. Community Area
+    6. Subscribe Area
+    7. Download Area
+    8. Footer Area
+
+-----------------------------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+p, a, span, i, label {
+  font-size: 1.6rem; }
+
+body {
+  background: #f0f2f5;
+  font-family: 'bangla-font'; }
+
+@font-face {
+  font-family: 'bangla-font';
+  src: url("../font/HindSiliguri-Regular.ttf") format("truetype"); }
+
+nav.navbar {
+  padding: 0; }
+  nav.navbar ul.custom_menu li a {
+    text-decoration: none;
+    color: #66686C;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    padding: 1.6rem;
+    display: block;
+    border-radius: 5px;
+    border-bottom: 5px solid transparent;
+    outline: 0;
+    transition: all 0.3s; }
+    nav.navbar ul.custom_menu li a:hover {
+      background-color: #dfe2e6; }
+    nav.navbar ul.custom_menu li a.active {
+      color: #1876f2;
+      border-radius: 0;
+      border-color: #1876f2; }
+      nav.navbar ul.custom_menu li a.active:hover {
+        background-color: transparent; }
+  nav.navbar .menu_button .add_to_book {
+    font-size: 1.6rem;
+    background: #1876f2;
+    border-radius: 5px;
+    padding: 7px 2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s;
+    margin-right: .5rem; }
+    nav.navbar .menu_button .add_to_book:hover {
+      background: #1058b6; }
+    nav.navbar .menu_button .add_to_book i {
+      margin-right: 5px; }
+  nav.navbar .menu_button .edit_profile {
+    font-size: 1.6rem;
+    background: #1876f2;
+    border-radius: 5px;
+    padding: 7px 2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s; }
+    nav.navbar .menu_button .edit_profile:hover {
+      background: #1058b6; }
+    nav.navbar .menu_button .edit_profile i {
+      margin-right: 5px; }
+
+.loginSignup {
+  background-color: #f0f2f5;
+  height: 95vh;
+  font-family: 'bangla-font'; }
+  .loginSignup .loginSignup__container {
+    max-width: 98rem;
+    margin: auto;
+    padding: 10rem 2rem; }
+    .loginSignup .loginSignup__container .loginSignup_text {
+      padding: 100px 0 0; }
+      .loginSignup .loginSignup__container .loginSignup_text h2 {
+        font-size: 4.5rem;
+        font-family: "Monoton", cursive;
+        color: #1877f2; }
+      .loginSignup .loginSignup__container .loginSignup_text p {
+        font-size: 2.8rem;
+        color: #1c1e21;
+        line-height: 3.2rem;
+        font-weight: 500; }
+    .loginSignup .loginSignup__container .loginSignup_form {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+      padding: 3rem;
+      margin: 1.5rem 0 0;
+      background-color: #fff;
+      border-radius: 1rem;
+      transition: all .3s; }
+      .loginSignup .loginSignup__container .loginSignup_form:hover {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.3); }
+      .loginSignup .loginSignup__container .loginSignup_form form input::placeholder,
+      .loginSignup .loginSignup__container .loginSignup_form form input {
+        font-size: 1.6rem;
+        margin-bottom: 1rem; }
+      .loginSignup .loginSignup__container .loginSignup_form form input:focus {
+        box-shadow: unset; }
+      .loginSignup .loginSignup__container .loginSignup_form form input {
+        padding: 1rem 1.6rem; }
+      .loginSignup .loginSignup__container .loginSignup_form form input[type="submit"] {
+        font-size: 1.8rem;
+        font-weight: 700; }
+      .loginSignup .loginSignup__container .loginSignup_form form .forgotten {
+        text-align: center; }
+        .loginSignup .loginSignup__container .loginSignup_form form .forgotten .forgottent_link {
+          color: #1877f2;
+          font-size: 1.4rem;
+          font-weight: 600;
+          text-decoration: none; }
+          .loginSignup .loginSignup__container .loginSignup_form form .forgotten .forgottent_link:hover {
+            text-decoration: underline; }
+        .loginSignup .loginSignup__container .loginSignup_form form .forgotten .new_account {
+          font-size: 17px;
+          font-weight: 600;
+          text-decoration: none;
+          color: #fff;
+          text-transform: capitalize;
+          padding: .7rem 1rem;
+          margin: 1.5rem 0 -1.5rem;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+          width: 20rem;
+          text-align: center; }
+      .loginSignup .loginSignup__container .loginSignup_form form .gender .input-group-text label {
+        width: 80%;
+        text-align: left; }
+      .loginSignup .loginSignup__container .loginSignup_form .modal-header h2 {
+        font-size: 2rem;
+        color: #162643;
+        font-weight: 600; }
+      .loginSignup .loginSignup__container .loginSignup_form .modal-body p {
+        color: #162643;
+        font-size: 1.7rem;
+        font-weight: 500; }
+      .loginSignup .loginSignup__container .loginSignup_form .modal-footer button {
+        font-size: 1.6rem;
+        border-radius: .5rem; }
+      .loginSignup .loginSignup__container .loginSignup_form .modal-footer .cancel_btn {
+        background: #d8dde6;
+        transition: all .2s; }
+        .loginSignup .loginSignup__container .loginSignup_form .modal-footer .cancel_btn:hover {
+          background: #c6ccd6; }
+
+.profile-banner {
+  background-image: linear-gradient(#acceed, #ffffff);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1); }
+  .profile-banner__container {
+    max-width: 98rem;
+    margin: auto; }
+    .profile-banner__container .profile__cover {
+      background: url(../images/cover_bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: 35rem;
+      border-radius: 0 0 8px 8px;
+      position: relative; }
+      .profile-banner__container .profile__cover img {
+        height: 100%; }
+      .profile-banner__container .profile__cover .photo {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -90%); }
+        .profile-banner__container .profile__cover .photo .profile_image {
+          width: 17rem;
+          height: 17rem;
+          border-radius: 50%;
+          border: 5px solid #fff;
+          cursor: pointer;
+          transition: all .3s;
+          overflow: hidden;
+          box-shadow: inset 0 0 2px #bbc0ce; }
+          .profile-banner__container .profile__cover .photo .profile_image img {
+            width: 100%; }
+        .profile-banner__container .profile__cover .photo input {
+          display: none; }
+        .profile-banner__container .profile__cover .photo label {
+          position: absolute;
+          top: 100%;
+          left: 100%;
+          transform: translate(-100%, -100%); }
+          .profile-banner__container .profile__cover .photo label i {
+            font-size: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #e4e6eb;
+            line-height: 50px;
+            text-align: center;
+            cursor: pointer;
+            transition: all .2s; }
+            .profile-banner__container .profile__cover .photo label i:hover {
+              background: #bbc0ce; }
+      .profile-banner__container .profile__cover .cover_upload {
+        background: #e9ebf0;
+        padding: 5px 10px;
+        border-radius: 5px;
+        position: absolute;
+        right: 3%;
+        bottom: 3%; }
+        .profile-banner__container .profile__cover .cover_upload input {
+          display: none; }
+        .profile-banner__container .profile__cover .cover_upload label {
+          cursor: pointer; }
+          .profile-banner__container .profile__cover .cover_upload label i {
+            font-size: 25px;
+            margin-right: 5px; }
+    .profile-banner__container .profile_text {
+      text-align: center;
+      padding: 30px 0; }
+      .profile-banner__container .profile_text .name {
+        font-size: 30px;
+        color: #000;
+        font-weight: 700; }
+      .profile-banner__container .profile_text .bio {
+        color: #6D6F73; }
+
+.main_content {
+  margin: 20px 0; }
+  .main_content .main_container {
+    width: 90rem;
+    margin: 0 auto; }
+    .main_content .main_container .col-md-5 {
+      position: sticky;
+      top: 1000px; }
+
+.headerSignup {
+  background-color: #517da2;
+  background-image: linear-gradient(#7ca9ce, #517da2);
+  border-bottom: 1px solid #234c6e; }
+  .headerSignup__container {
+    max-width: 98rem;
+    margin: auto; }
+    .headerSignup__container .signup_logo {
+      display: flex;
+      align-items: center;
+      height: 100%; }
+      .headerSignup__container .signup_logo a {
+        text-decoration: none;
+        font-family: "Monoton", cursive;
+        font-size: 3rem;
+        color: #fff; }
+    .headerSignup__container form {
+      padding: 1.5rem 0; }
+      .headerSignup__container form .signup_phone label {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #fff;
+        margin: 0 0 .7rem 0; }
+      .headerSignup__container form .signup_phone input {
+        width: 100%;
+        border: 1px solid #1d2a5b;
+        color: #1c1e21;
+        background-color: #fff;
+        outline: none;
+        padding: 3px; }
+      .headerSignup__container form .signup_password label {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #fff;
+        margin: 0 0 .7rem 0; }
+      .headerSignup__container form .signup_password input {
+        width: 100%;
+        border: 1px solid #1d2a5b;
+        color: #1c1e21;
+        background-color: #fff;
+        outline: none;
+        padding: 3px; }
+      .headerSignup__container form .signup_password a {
+        font-size: 1.2rem;
+        color: #bfe2ff;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all .2s; }
+        .headerSignup__container form .signup_password a:hover {
+          text-decoration: underline; }
+      .headerSignup__container form .signup_login input {
+        background-color: #4267b2;
+        border: 1px solid #29487d;
+        font-size: 12px;
+        font-weight: bold; }
+
+.sidebar {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 7px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-right: .3rem; }
+  .sidebar .info h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #020202;
+    margin-bottom: 1.5rem; }
+  .sidebar .info ul {
+    list-style: none;
+    padding: 0; }
+    .sidebar .info ul li {
+      font-size: 1.6rem;
+      color: #020202;
+      margin-bottom: 1.8rem; }
+    .sidebar .info ul li a {
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: #020202; }
+    .sidebar .info ul li i {
+      color: #92979c;
+      font-size: 2rem;
+      margin-right: 10px;
+      width: 2.2rem;
+      text-align: center; }
+  .sidebar .info .edit_details_button a {
+    display: block;
+    background-color: #e4e6eb;
+    font-size: 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    color: #020202;
+    text-transform: capitalize;
+    padding: 6px 0;
+    border-radius: 5px;
+    font-weight: 600;
+    outline: 0;
+    transition: all 0.2s; }
+    .sidebar .info .edit_details_button a:hover {
+      background-color: #cbcdd3; }
+
+.post_section {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 7px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-left: .3rem;
+  margin-bottom: 1.5rem; }
+  .post_section .post_write {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; }
+    .post_section .post_write .user_image {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid #bfc3ca;
+      display: inline-block;
+      margin-right: 1.5rem; }
+      .post_section .post_write .user_image img {
+        height: 100%; }
+    .post_section .post_write .post_field {
+      display: inline-block;
+      background-color: #f0f2f5;
+      color: #686A6E;
+      border-radius: 50px;
+      padding: 7px 10px;
+      width: 88%;
+      cursor: pointer; }
+  .post_section .post_option .book_review i {
+    color: #1876f2; }
+  .post_section .post_option .photos i {
+    color: #45bd62; }
+  .post_section .post_option .write i {
+    color: #39afd5; }
+  .post_section .post_option .book_review,
+  .post_section .post_option .photos,
+  .post_section .post_option .write {
+    background: #f1f1f3;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all .2s; }
+    .post_section .post_option .book_review:hover,
+    .post_section .post_option .photos:hover,
+    .post_section .post_option .write:hover {
+      background-color: #dee1e9; }
+    .post_section .post_option .book_review input,
+    .post_section .post_option .photos input,
+    .post_section .post_option .write input {
+      display: none; }
+    .post_section .post_option .book_review label,
+    .post_section .post_option .photos label,
+    .post_section .post_option .write label {
+      cursor: pointer; }
+      .post_section .post_option .book_review label i,
+      .post_section .post_option .photos label i,
+      .post_section .post_option .write label i {
+        font-size: 2rem;
+        margin-right: 5px; }
+
+.photo_upload_post {
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-left: .3rem;
+  margin-bottom: 1rem; }
+  .photo_upload_post .photo_upload_post_header {
+    display: flex;
+    align-items: center;
+    padding: 2rem 2rem .5rem; }
+    .photo_upload_post .photo_upload_post_header .header_image {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid #bfc3ca;
+      overflow: hidden;
+      display: inline-block;
+      margin-right: 1.5rem; }
+      .photo_upload_post .photo_upload_post_header .header_image img {
+        height: 100%; }
+    .photo_upload_post .photo_upload_post_header .profile_name p.name {
+      margin: 0; }
+      .photo_upload_post .photo_upload_post_header .profile_name p.name a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: #0b0b0b;
+        transition: all .2s;
+        font-weight: 600;
+        margin-right: 5px; }
+        .photo_upload_post .photo_upload_post_header .profile_name p.name a:hover {
+          text-decoration: underline; }
+      .photo_upload_post .photo_upload_post_header .profile_name p.name span {
+        color: #65676b;
+        text-transform: lowercase; }
+    .photo_upload_post .photo_upload_post_header .profile_name p.date {
+      margin: 0;
+      color: #65676b; }
+      .photo_upload_post .photo_upload_post_header .profile_name p.date a {
+        color: #65676b; }
+  .photo_upload_post .profile_picture {
+    min-height: 35rem;
+    position: relative; }
+    .photo_upload_post .profile_picture .cover_picture {
+      height: 50%; }
+      .photo_upload_post .profile_picture .cover_picture img {
+        width: 100%; }
+    .photo_upload_post .profile_picture .profile_pic {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+      text-align: center;
+      border: 5px solid #a66b6b;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .photo_upload_post .photo_upload_post_comment .like_comment {
+    display: flex;
+    justify-content: space-around; }
+    .photo_upload_post .photo_upload_post_comment .like_comment span {
+      color: #686A6E;
+      cursor: pointer; }
+      .photo_upload_post .photo_upload_post_comment .like_comment span i {
+        margin-right: 5px; }
+  .photo_upload_post .photo_upload_post_comment .comment_box {
+    padding: 0 1.5rem; }
+    .photo_upload_post .photo_upload_post_comment .comment_box .main_comment .author_image,
+    .photo_upload_post .photo_upload_post_comment .comment_box .reply_comment .author_image {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid #bfc3ca;
+      overflow: hidden;
+      display: inline-block; }
+      .photo_upload_post .photo_upload_post_comment .comment_box .main_comment .author_image img,
+      .photo_upload_post .photo_upload_post_comment .comment_box .reply_comment .author_image img {
+        height: 100%; }
+    .photo_upload_post .photo_upload_post_comment .comment_box .main_comment .comment_text,
+    .photo_upload_post .photo_upload_post_comment .comment_box .reply_comment .comment_text {
+      margin-left: .7rem;
+      display: flex;
+      align-items: center; }
+      .photo_upload_post .photo_upload_post_comment .comment_box .main_comment .comment_text .name_text,
+      .photo_upload_post .photo_upload_post_comment .comment_box .reply_comment .comment_text .name_text {
+        background: #f0f2f5;
+        display: inline-block;
+        border-radius: 20px;
+        padding: .8rem 1.2rem; }
+        .photo_upload_post .photo_upload_post_comment .comment_box .main_comment .comment_text .name_text .author_name,
+        .photo_upload_post .photo_upload_post_comment .comment_box .reply_comment .comment_text .name_text .author_name {
+          font-size: 1.6rem;
+          color: #060606;
+          font-weight: 600;
+          margin: 0;
+          cursor: pointer; }
+        .photo_upload_post .photo_upload_post_comment .comment_box .main_comment .comment_text .name_text .author_text,
+        .photo_upload_post .photo_upload_post_comment .comment_box .reply_comment .comment_text .name_text .author_text {
+          font-size: 1.5rem;
+          color: #060606;
+          font-weight: normal;
+          margin: 0; }
+      .photo_upload_post .photo_upload_post_comment .comment_box .main_comment .comment_text .hide_option,
+      .photo_upload_post .photo_upload_post_comment .comment_box .reply_comment .comment_text .hide_option {
+        margin-left: .3rem;
+        visibility: hidden;
+        opacity: 0; }
+        .photo_upload_post .photo_upload_post_comment .comment_box .main_comment .comment_text .hide_option span,
+        .photo_upload_post .photo_upload_post_comment .comment_box .reply_comment .comment_text .hide_option span {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: #f0f2f5;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1rem;
+          cursor: pointer; }
+    .photo_upload_post .photo_upload_post_comment .comment_box .main_comment .reply,
+    .photo_upload_post .photo_upload_post_comment .comment_box .reply_comment .reply {
+      margin: 2px 30px 8px; }
+      .photo_upload_post .photo_upload_post_comment .comment_box .main_comment .reply span,
+      .photo_upload_post .photo_upload_post_comment .comment_box .reply_comment .reply span {
+        font-size: 1.6rem;
+        color: #686A6E;
+        font-weight: 700;
+        cursor: pointer; }
+        .photo_upload_post .photo_upload_post_comment .comment_box .main_comment .reply span:hover,
+        .photo_upload_post .photo_upload_post_comment .comment_box .reply_comment .reply span:hover {
+          text-decoration: underline; }
+    .photo_upload_post .photo_upload_post_comment .comment_box .main_comment:hover .hide_option,
+    .photo_upload_post .photo_upload_post_comment .comment_box .reply_comment:hover .hide_option {
+      visibility: visible;
+      opacity: 1; }
+    .photo_upload_post .photo_upload_post_comment .comment_box .reply_comment {
+      margin-left: 4rem; }
+    .photo_upload_post .photo_upload_post_comment .comment_box .comment_write {
+      display: flex;
+      align-items: center;
+      padding-bottom: 1rem; }
+      .photo_upload_post .photo_upload_post_comment .comment_box .comment_write .user_image {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1px solid #bfc3ca;
+        display: inline-block;
+        margin-right: 1.5rem; }
+        .photo_upload_post .photo_upload_post_comment .comment_box .comment_write .user_image img {
+          height: 100%; }
+      .photo_upload_post .photo_upload_post_comment .comment_box .comment_write .comment_field {
+        display: inline-block;
+        background-color: #f0f2f5;
+        color: #686A6E;
+        border-radius: 50px;
+        padding: 7px 10px;
+        width: 88%;
+        outline: 0;
+        border: 0;
+        font-size: 1.6rem; }
+
+.post_with_photo {
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-left: .3rem;
+  margin-bottom: 1rem; }
+  .post_with_photo .post_with_photo_header {
+    display: flex;
+    align-items: center;
+    padding: 2rem 2rem .5rem; }
+    .post_with_photo .post_with_photo_header .header_image {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid #bfc3ca;
+      overflow: hidden;
+      display: inline-block;
+      margin-right: 1.5rem; }
+      .post_with_photo .post_with_photo_header .header_image img {
+        height: 100%; }
+    .post_with_photo .post_with_photo_header .profile_name p.name {
+      margin: 0; }
+      .post_with_photo .post_with_photo_header .profile_name p.name a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: #0b0b0b;
+        transition: all .2s;
+        font-weight: 600;
+        margin-right: 5px; }
+        .post_with_photo .post_with_photo_header .profile_name p.name a:hover {
+          text-decoration: underline; }
+      .post_with_photo .post_with_photo_header .profile_name p.name span {
+        color: #65676b;
+        text-transform: lowercase; }
+    .post_with_photo .post_with_photo_header .profile_name p.date {
+      margin: 0;
+      color: #65676b; }
+      .post_with_photo .post_with_photo_header .profile_name p.date a {
+        color: #65676b; }
+  .post_with_photo .photo_post .post_text {
+    padding: .3rem 1rem; }
+  .post_with_photo .photo_post .post_image img {
+    width: 100%; }
+  .post_with_photo .post_with_photo_comment {
+    padding: 0 1.5rem; }
+    .post_with_photo .post_with_photo_comment .like_comment {
+      display: flex;
+      justify-content: space-around; }
+      .post_with_photo .post_with_photo_comment .like_comment span {
+        color: #686A6E;
+        cursor: pointer; }
+        .post_with_photo .post_with_photo_comment .like_comment span i {
+          margin-right: 5px; }
+    .post_with_photo .post_with_photo_comment .comment_box .main_comment .author_image,
+    .post_with_photo .post_with_photo_comment .comment_box .reply_comment .author_image {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid #bfc3ca;
+      overflow: hidden;
+      display: inline-block; }
+      .post_with_photo .post_with_photo_comment .comment_box .main_comment .author_image img,
+      .post_with_photo .post_with_photo_comment .comment_box .reply_comment .author_image img {
+        height: 100%; }
+    .post_with_photo .post_with_photo_comment .comment_box .main_comment .comment_text,
+    .post_with_photo .post_with_photo_comment .comment_box .reply_comment .comment_text {
+      margin-left: .7rem;
+      display: flex;
+      align-items: center; }
+      .post_with_photo .post_with_photo_comment .comment_box .main_comment .comment_text .name_text,
+      .post_with_photo .post_with_photo_comment .comment_box .reply_comment .comment_text .name_text {
+        background: #f0f2f5;
+        display: inline-block;
+        border-radius: 20px;
+        padding: .8rem 1.2rem; }
+        .post_with_photo .post_with_photo_comment .comment_box .main_comment .comment_text .name_text .author_name,
+        .post_with_photo .post_with_photo_comment .comment_box .reply_comment .comment_text .name_text .author_name {
+          font-size: 1.6rem;
+          color: #060606;
+          font-weight: 600;
+          margin: 0;
+          cursor: pointer; }
+        .post_with_photo .post_with_photo_comment .comment_box .main_comment .comment_text .name_text .author_text,
+        .post_with_photo .post_with_photo_comment .comment_box .reply_comment .comment_text .name_text .author_text {
+          font-size: 1.5rem;
+          color: #060606;
+          font-weight: normal;
+          margin: 0; }
+      .post_with_photo .post_with_photo_comment .comment_box .main_comment .comment_text .hide_option,
+      .post_with_photo .post_with_photo_comment .comment_box .reply_comment .comment_text .hide_option {
+        margin-left: .3rem;
+        visibility: hidden;
+        opacity: 0; }
+        .post_with_photo .post_with_photo_comment .comment_box .main_comment .comment_text .hide_option span,
+        .post_with_photo .post_with_photo_comment .comment_box .reply_comment .comment_text .hide_option span {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: #f0f2f5;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1rem;
+          cursor: pointer; }
+    .post_with_photo .post_with_photo_comment .comment_box .main_comment .reply,
+    .post_with_photo .post_with_photo_comment .comment_box .reply_comment .reply {
+      margin: 2px 30px 8px; }
+      .post_with_photo .post_with_photo_comment .comment_box .main_comment .reply span,
+      .post_with_photo .post_with_photo_comment .comment_box .reply_comment .reply span {
+        font-size: 1.6rem;
+        color: #686A6E;
+        font-weight: 700;
+        cursor: pointer; }
+        .post_with_photo .post_with_photo_comment .comment_box .main_comment .reply span:hover,
+        .post_with_photo .post_with_photo_comment .comment_box .reply_comment .reply span:hover {
+          text-decoration: underline; }
+    .post_with_photo .post_with_photo_comment .comment_box .main_comment:hover .hide_option,
+    .post_with_photo .post_with_photo_comment .comment_box .reply_comment:hover .hide_option {
+      visibility: visible;
+      opacity: 1; }
+    .post_with_photo .post_with_photo_comment .comment_box .reply_comment {
+      margin-left: 4rem; }
+    .post_with_photo .post_with_photo_comment .comment_box .comment_write {
+      display: flex;
+      align-items: center;
+      padding-bottom: 1rem; }
+      .post_with_photo .post_with_photo_comment .comment_box .comment_write .user_image {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1px solid #bfc3ca;
+        display: inline-block;
+        margin-right: 1.5rem; }
+        .post_with_photo .post_with_photo_comment .comment_box .comment_write .user_image img {
+          height: 100%; }
+      .post_with_photo .post_with_photo_comment .comment_box .comment_write .comment_field {
+        display: inline-block;
+        background-color: #f0f2f5;
+        color: #686A6E;
+        border-radius: 50px;
+        padding: 7px 10px;
+        width: 88%;
+        outline: 0;
+        border: 0;
+        font-size: 1.6rem; }
+
+.post_section .post_write .modal .modal-content {
+  border-radius: 10px;
+  border: none;
+  padding: 10px 15px; }
+  .post_section .post_write .modal .modal-content .modal-header #exampleModalLabel {
+    transform: translateX(150%); }
+  .post_section .post_write .modal .modal-content .modal-header .btn-close {
+    background-color: #cecece;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    font-size: 1.6rem; }
+    .post_section .post_write .modal .modal-content .modal-header .btn-close:focus {
+      box-shadow: unset; }
+  .post_section .post_write .modal .modal-content .modal-body {
+    padding: 0; }
+    .post_section .post_write .modal .modal-content .modal-body .post_head_part {
+      display: flex;
+      margin: 15px 0; }
+      .post_section .post_write .modal .modal-content .modal-body .post_head_part .select_post_type h4 {
+        font-size: 1.6rem;
+        font-weight: 600; }
+      .post_section .post_write .modal .modal-content .modal-body .post_head_part .select_post_type .form-select {
+        background-color: #DFE1E6;
+        border: none;
+        font-size: 1.5rem;
+        border-radius: 5px; }
+        .post_section .post_write .modal .modal-content .modal-body .post_head_part .select_post_type .form-select:focus {
+          box-shadow: none; }
+    .post_section .post_write .modal .modal-content .modal-body .post_write_area textarea {
+      border: none;
+      font-size: 2rem;
+      resize: none; }
+      .post_section .post_write .modal .modal-content .modal-body .post_write_area textarea:focus {
+        box-shadow: none; }
+  .post_section .post_write .modal .modal-content .modal-footer {
+    display: block;
+    padding: 0;
+    border: none; }
+    .post_section .post_write .modal .modal-content .modal-footer button {
+      width: 100%;
+      margin-top: 10px;
+      font-size: 1.6rem; }
+      .post_section .post_write .modal .modal-content .modal-footer button:focus {
+        box-shadow: none; }
