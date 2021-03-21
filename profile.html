@@ -36,8 +36,18 @@
             </div>
             <div class="profile_text">
                 <h2 class="name">Md minhaj mia</h2>
-                <p class="bio">I am an imran khan</p>
-                <a href="#" class="">Edit</a>
+                <div class="profile_text_edit-still" id="profile_edit_button">
+                    <p class="bio">I am an imran khan</p>
+                    <a href="#" class="" onclick="show_edit_form()">Edit</a>
+                </div>
+                <div class="profile_text_edit-form d-none" id="profile_edit_form">
+                    <textarea name="" id="" class="form-control">ঘুম থেকে উঠে সকালেই যদি নতুন কিছু শিখে ফেলি তাহলে সারাদিন আমার মহা আনন্দে কাটে।</textarea>
+                    <p>22 characters remaining</p>
+                    <div class="profile_text_edit-form_button">
+                        <button onclick="show_edit_button_container()">Cancel</button>
+                        <button onclick="show_edit_button_container()">Save</button>
+                    </div>
+                </div>  
             </div>
             <hr>
             <!-- menu start-->
