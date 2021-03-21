@@ -1,6 +1,7 @@
 
 // fonts
 $logo-font : 'Monoton', cursive;
+$bangla-font : 'bangla-font';
 $default : 1.6rem;
 
 // color
@@ -15,9 +16,11 @@ $select_radio_color : #90949c;
 
 // shadow
 $login_box_shadow : 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+$login_box_shadow_light : 0 1px 2px rgba(0, 0, 0, .1), 0 1px 1px rgba(0, 0, 0, .1);
 $login_box_shadow-secondary : 0 2px 4px rgba(0, 0, 0, .3), 0 8px 16px rgba(0, 0, 0, .3);
 
 // width
 $signup_login_width : 98rem;
+$main_content_width: 90rem;
 
  

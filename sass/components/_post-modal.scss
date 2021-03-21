@@ -1,0 +1,72 @@
+
+.post_section{
+    .post_write{
+        .modal{
+            .modal-content{
+                border-radius: 10px;
+	            border: none;
+                padding: 10px 15px;
+                .modal-header{
+                    #exampleModalLabel {
+                        transform: translateX(150%);
+                    }
+                    .btn-close {
+                        background-color: #cecece;
+                        height: 25px;
+                        width: 25px;
+                        border-radius: 50%;
+                        font-size: 1.6rem;
+                        &:focus{
+                            box-shadow: unset;
+                        }
+                    }
+                }
+                .modal-body{
+                    padding: 0;
+                    .post_head_part{
+                        display: flex;
+                        margin: 15px 0;
+                        .select_post_type{
+                            h4{
+                                font-size: 1.6rem;
+                                font-weight: 600;
+                            }
+                            .form-select{
+                                background-color: #DFE1E6;
+                                border: none;
+                                font-size: 1.5rem;
+                                border-radius: 5px;
+                                &:focus{
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                    }
+                    .post_write_area{
+                        textarea{
+                            border: none;
+                            font-size: 2rem;
+                            resize: none;
+                            &:focus{
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+                .modal-footer{
+                    display: block;
+                    padding: 0;
+                    border: none;
+                    button{
+                        width: 100%;
+                        margin-top: 10px;
+                        font-size: 1.6rem;
+                        &:focus{
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

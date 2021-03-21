@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="font/fontawesome/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet"> 
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+
+    <!-- banner part start -->
+    <section class="profile-banner">
+        <div class="profile-banner__container">
+            <div class="profile__cover"> 
+                <div class="photo">
+                    <div class="profile_image">
+                        <img src="images/profile-picture-use.jpg" alt="">  
+                    </div> 
+                    <input type="file" id="profile"><label for="profile"><i class="fas fa-camera"></i></label>
+                </div>
+                <div class="cover_upload">
+                    <input type="file" id="cover_phpto"><label for="cover_phpto"><i class="fas fa-camera me-sm-2 mx-auto"></i><span class="d-sm-inline d-none">Edit cover Photo</span></label>
+                </div>
+            </div>
+            <div class="profile_text">
+                <h2 class="name">Md minhaj mia</h2>
+                <p class="bio">I am an imran khan</p>
+                <a href="#" class="">Edit</a>
+            </div>
+            <hr>
+            <!-- menu start-->
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="container">
+                  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 custom_menu">
+                       <li><a href="#" class="menu-item">posts</a></li>
+                       <li><a href="#" class="menu-item">about</a></li>
+                       <li><a href="#" class="menu-item">friends</a></li>
+                       <li><a href="#" class="menu-item">books</a></li>
+                       <li><a href="#" class="menu-item">photos</a></li>
+                    </ul>
+                    <div class="menu_button ms-auto">
+                        <a href="#" class="add_to_book"><i class="fas fa-plus-circle"></i>Add to Book</a>
+                        <a href="#" class="edit_profile"><i class="fas fa-pen"></i>Edit Profile</a> 
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            <!-- menu end-->
+
+        </div>
+    </section>
+    <!-- banner part end -->
+
+
+    <!-- Main content section start -->
+    <section class="main_content">
+        <div class="main_container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="sidebar">
+                        <div class="info">
+                            <h3>Info</h3>
+                            <ul>
+                                <li><i class="fas fa-briefcase"></i>Works at Student</li>
+
+                                <li><i class="fas fa-graduation-cap"></i>Studies at University of Dhaka</li>
+
+                                <li><i class="fas fa-graduation-cap"></i>Studies at University of Dhaka</li>
+
+                                <li><i class="fas fa-home"></i>Lives in Dhaka, Bangladesh</li>
+
+                                <li><i class="fas fa-map-marker-alt"></i>From Pirojpur, Chittagong, Bangladesh</li>
+
+                                <li><i class="fas fa-heart"></i>Single</li>
+
+                                <li><i class="fas fa-wifi"></i>Followed by 327 people</li>
+
+                                <li><a href="https://www.instagram.com/amihabibkhan/"><i class="fab fa-instagram"></i>https://www.instagram.com/amihabibkhan/</a></li> 
+
+                                <li><a href="https://www.twitter.com/amihabibkhan/"><i class="fab fa-twitter"></i>https://www.twitter.com/amihabibkhan/</a></li>
+
+                                <li><a href="https://www.ruhul-amin.info/amihabibkhan/"><i class="fas fa-globe"></i>https://www.ruhul-amin.info/amihabibkhan/</a></li>
+
+                                <li><a href="https://www.youtube.com/channel/UC63ClCdfDe1-0ncGLHR3HRw"><i class="fab fa-youtube"></i>youtube Channel</a></li>
+                            </ul>
+                            <div class="edit_details_button">
+                                <a href="#">Edit details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 timeline">
+                    <!-- post writing section -->
+                    <div class="post_section">
+                        <div class="post_write">
+                            <span class="user_image">
+                                <img src="images/profile-picture-use.jpg" alt="User Image">
+                            </span>
+                            <span data-bs-toggle="modal" data-bs-target="#exampleModal" class="post_field">You can write post here</span>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title" id="exampleModalLabel">পোস্ট তৈরি করুন</h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="post_head_part">
+                                            <div class="user_image">
+                                                <img src="images/profile-picture-use.jpg" alt="User image">
+                                            </div>
+                                            <div class="select_post_type">
+                                                <h4>Md. Saidul Islam</h4>
+                                                <select class="form-select" id="inputGroupSelect01">
+                                                    <option selected>Friends</option>
+                                                    <option value="1">Public</option>
+                                                    <option value="2">Only Me</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="post_write_area">
+                                            <textarea placeholder="আপনান মনের কথা লিখুন?" class="form-control" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">পোস্ট করুন</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+  
+
+
+                        </div>
+                        <div class="post_option">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="book_review">
+                                        <input type="file" id="cover_phpto"><label for="cover_phpto"><i class="fas fa-book-open me-sm-2 mx-auto"></i><span class="d-sm-inline d-none">Book Review</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="photos">
+                                        <input type="file" id="cover_phpto"><label for="cover_phpto"><i class="fas fa-images me-sm-2 mx-auto"></i><span class="d-sm-inline d-none">Photos</span></label>
+                                    </div> 
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="write">
+                                        <input type="file" id="cover_phpto"><label for="cover_phpto"><i class="far fa-edit me-sm-2 mx-auto"></i><span class="d-sm-inline d-none">Write</span></label> 
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- profile photo upload start -->
+                    <div class="photo_upload_post">
+                        <div class="photo_upload_post_header">
+                            <div class="header_image">
+                                <img src="images/profile-picture-use.jpg" alt="profile image">
+                            </div>
+                            <div class="profile_name">
+                                <p class="name"><a href="#">Md Saidul islam</a><span>updated his profile picture.</span></p>
+                                <p class="date">March 14 at 4:00 pm <a href="#"><i class="fas fa-globe-asia"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="profile_picture">
+                            <div class="cover_picture">
+                                <img src="images/cover_bg.jpg" alt="cover image">
+                            </div>
+                            <div class="profile_pic">
+                                <img src="images/profile-picture-use.jpg" alt="">
+                            </div>
+                            
+                        </div>
+                        <hr>
+                        <div class="photo_upload_post_comment">
+                            <div class="like_comment">
+                                <span><i class="far fa-thumbs-up"></i>লাইক(20k)</span>
+                                <span><i class="far fa-comment-alt"></i>কমেন্ট(200)</span>
+                            </div>
+                            
+                            <!-- comment box -->
+                            <div class="comment_box">
+                                <hr>
+                                <div class="main_comment">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <div class="author_image">
+                                                <img src="images/fujael.jpg" alt="author">
+                                            </div>
+                                        </div>
+                                        <div class="col-11">
+                                            <div class="comment_text">
+                                                <div class="name_text">
+                                                    <h4 class="author_name">Fujael ahmed (suhag)</h4>
+                                                    <p class="author_text">Assalamu alaikum Oa rohmatullah Assalamu alaikum Oa rohmatullah</p> 
+                                                </div>
+                                                <div class="hide_option">
+                                                    <span class="hide_3dot"><i class="fas fa-ellipsis-h"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="reply">
+                                                <span>রিপ্লাই</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reply_comment">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <div class="author_image">
+                                                <img src="images/profile-picture-use.jpg" alt="author">
+                                            </div>
+                                        </div>
+                                        <div class="col-11">
+                                            <div class="comment_text">
+                                                <div class="name_text">
+                                                    <h4 class="author_name">Md Saidul islam</h4>
+                                                    <p class="author_text">Walaikumu salam. Kemon acen vai?</p> 
+                                                </div>
+                                                <div class="hide_option">
+                                                    <span class="hide_3dot"><i class="fas fa-ellipsis-h"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="reply">
+                                                <span>রিপ্লাই</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reply_comment">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <div class="author_image">
+                                                <img src="images/fujael.jpg" alt="author">
+                                            </div>
+                                        </div>
+                                        <div class="col-11">
+                                            <div class="comment_text">
+                                                <div class="name_text">
+                                                    <h4 class="author_name">Fujael ahmed (suhag)</h4>
+                                                    <p class="author_text">Alhamdulillah</p> 
+                                                </div>
+                                                <div class="hide_option">
+                                                    <span class="hide_3dot"><i class="fas fa-ellipsis-h"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="reply">
+                                                <span>রিপ্লাই</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="comment_write">
+                                    <span class="user_image">
+                                        <img src="images/profile-picture-use.jpg" alt="User Image">
+                                    </span>
+                                    <input type="text" class="comment_field" placeholder="Write a comment...">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- profile photo upload end -->
+
+                    <!-- post with photo start -->
+                    <div class="post_with_photo">
+                        <div class="post_with_photo_header">
+                            <div class="header_image">
+                                <img src="images/profile-picture-use.jpg" alt="profile image">
+                            </div>
+                            <div class="profile_name">
+                                <p class="name"><a href="#">Md Saidul islam</a><span>updated his profile picture.</span></p>
+                                <p class="date">March 14 at 4:00 pm <a href="#"><i class="fas fa-globe-asia"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="photo_post">
+                            <div class="post_text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, aliquam! Labore error recusandae neque, cupiditate quisquam sunt fuga id commodi minima eveniet! Sapiente, fugit earum voluptas nostrum quibusdam dignissimos commodi.</p>
+                            </div>
+                            <div class="post_image">
+                                <img src="images/profile-picture-use.jpg" alt="">
+                            </div>
+                            
+                        </div>
+                       
+                        <div class="post_with_photo_comment"> 
+                            <hr>
+                            <div class="like_comment">
+                                <span><i class="far fa-thumbs-up"></i>লাইক(20k)</span>
+                                <span><i class="far fa-comment-alt"></i>কমেন্ট(200)</span>
+                            </div>
+                            
+                            <!-- comment box -->
+                            <div class="comment_box">
+                                <hr>
+                                <div class="main_comment">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <div class="author_image">
+                                                <img src="images/fujael.jpg" alt="author">
+                                            </div>
+                                        </div>
+                                        <div class="col-11">
+                                            <div class="comment_text">
+                                                <div class="name_text">
+                                                    <h4 class="author_name">Fujael ahmed (suhag)</h4>
+                                                    <p class="author_text">Assalamu alaikum Oa rohmatullah Assalamu alaikum Oa rohmatullah</p> 
+                                                </div>
+                                                <div class="hide_option">
+                                                    <span class="hide_3dot"><i class="fas fa-ellipsis-h"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="reply">
+                                                <span>রিপ্লাই</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reply_comment">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <div class="author_image">
+                                                <img src="images/profile-picture-use.jpg" alt="author">
+                                            </div>
+                                        </div>
+                                        <div class="col-11">
+                                            <div class="comment_text">
+                                                <div class="name_text">
+                                                    <h4 class="author_name">Md Saidul islam</h4>
+                                                    <p class="author_text">Walaikumu salam. Kemon acen vai?</p> 
+                                                </div>
+                                                <div class="hide_option">
+                                                    <span class="hide_3dot"><i class="fas fa-ellipsis-h"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="reply">
+                                                <span>রিপ্লাই</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reply_comment">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <div class="author_image">
+                                                <img src="images/fujael.jpg" alt="author">
+                                            </div>
+                                        </div>
+                                        <div class="col-11">
+                                            <div class="comment_text">
+                                                <div class="name_text">
+                                                    <h4 class="author_name">Fujael ahmed (suhag)</h4>
+                                                    <p class="author_text">Alhamdulillah</p> 
+                                                </div>
+                                                <div class="hide_option">
+                                                    <span class="hide_3dot"><i class="fas fa-ellipsis-h"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="reply">
+                                                <span>রিপ্লাই</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="comment_write">
+                                    <span class="user_image">
+                                        <img src="images/profile-picture-use.jpg" alt="User Image">
+                                    </span>
+                                    <input type="text" class="comment_field" placeholder="Write a comment...">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!--post with photo end -->
+
+
+                    <!-- post without photo start -->
+                    <div class="post_with_photo">
+                        <div class="post_with_photo_header">
+                            <div class="header_image">
+                                <img src="images/profile-picture-use.jpg" alt="profile image">
+                            </div>
+                            <div class="profile_name">
+                                <p class="name"><a href="#">Md Saidul islam</a><span>updated his profile picture.</span></p>
+                                <p class="date">March 14 at 4:00 pm <a href="#"><i class="fas fa-globe-asia"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="photo_post">
+                            <div class="post_text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, aliquam! Labore error recusandae neque, cupiditate quisquam sunt fuga id commodi minima eveniet! Sapiente, fugit earum voluptas nostrum quibusdam dignissimos commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quibusdam rerum, velit provident exercitationem dicta odit quia eaque mollitia quae est voluptatem repudiandae, fugit nemo maxime distinctio beatae? Laudantium, libero.</p>
+                            </div>
+                            <!-- <div class="post_image">
+                                <img src="images/profile-picture-use.jpg" alt="">
+                            </div> -->
+                            
+                        </div>
+                       
+                        <div class="post_with_photo_comment"> 
+                            <hr>
+                            <div class="like_comment">
+                                <span><i class="far fa-thumbs-up"></i>লাইক(20k)</span>
+                                <span><i class="far fa-comment-alt"></i>কমেন্ট(200)</span>
+                            </div>
+                            
+                            <!-- comment box -->
+                            <div class="comment_box">
+                                <hr>
+                                <div class="main_comment">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <div class="author_image">
+                                                <img src="images/fujael.jpg" alt="author">
+                                            </div>
+                                        </div>
+                                        <div class="col-11">
+                                            <div class="comment_text">
+                                                <div class="name_text">
+                                                    <h4 class="author_name">Fujael ahmed (suhag)</h4>
+                                                    <p class="author_text">Assalamu alaikum Oa rohmatullah Assalamu alaikum Oa rohmatullah</p> 
+                                                </div>
+                                                <div class="hide_option">
+                                                    <span class="hide_3dot"><i class="fas fa-ellipsis-h"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="reply">
+                                                <span>রিপ্লাই</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reply_comment">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <div class="author_image">
+                                                <img src="images/profile-picture-use.jpg" alt="author">
+                                            </div>
+                                        </div>
+                                        <div class="col-11">
+                                            <div class="comment_text">
+                                                <div class="name_text">
+                                                    <h4 class="author_name">Md Saidul islam</h4>
+                                                    <p class="author_text">Walaikumu salam. Kemon acen vai?</p> 
+                                                </div>
+                                                <div class="hide_option">
+                                                    <span class="hide_3dot"><i class="fas fa-ellipsis-h"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="reply">
+                                                <span>রিপ্লাই</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reply_comment">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <div class="author_image">
+                                                <img src="images/fujael.jpg" alt="author">
+                                            </div>
+                                        </div>
+                                        <div class="col-11">
+                                            <div class="comment_text">
+                                                <div class="name_text">
+                                                    <h4 class="author_name">Fujael ahmed (suhag)</h4>
+                                                    <p class="author_text">Alhamdulillah</p> 
+                                                </div>
+                                                <div class="hide_option">
+                                                    <span class="hide_3dot"><i class="fas fa-ellipsis-h"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="reply">
+                                                <span>রিপ্লাই</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="comment_write">
+                                    <span class="user_image">
+                                        <img src="images/profile-picture-use.jpg" alt="User Image">
+                                    </span>
+                                    <input type="text" class="comment_field" placeholder="Write a comment...">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- post without photo end -->
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main content section end -->
+         
+     
+
+    <!-- jQuery js -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,6 +1,8 @@
 .loginSignup{
     background-color: $bg_color;
     height: 95vh;
+    font-family : 'bangla-font';
+    
     .loginSignup__container{
         max-width: $signup_login_width;
         margin: auto;
@@ -30,6 +32,7 @@
             background-color: #fff;
             border-radius: 1rem;
             transition: all .3s;
+
 
             &:hover {
                 box-shadow: $login_box_shadow-secondary;

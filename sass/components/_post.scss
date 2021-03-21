@@ -1,0 +1,81 @@
+.post_section{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 7px;
+    box-shadow: $login_box_shadow_light;
+    margin-left: .3rem;
+    margin-bottom: 1.5rem;
+
+    .post_write{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        
+
+        .user_image{
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid #bfc3ca;
+            display: inline-block;
+            margin-right: 1.5rem;
+            img{
+                height: 100%;
+            }
+        }
+        .post_field{
+            display: inline-block;
+            background-color: #f0f2f5;
+            color: #686A6E;
+            border-radius: 50px;
+            padding: 7px 10px;
+            width: 88%;
+            cursor: pointer;
+        }
+    }
+
+    .post_option{
+        .book_review{
+            i{
+                color: #1876f2;
+            }
+        }
+        .photos{
+            i{
+                color: #45bd62;
+            }
+        }
+        .write{
+            i{
+                color: #39afd5;
+            }
+        }
+        .book_review,
+        .photos,
+        .write{
+            background: #f1f1f3;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all .2s;
+
+            &:hover{
+                background-color: #dee1e9;
+            }
+            
+            input{
+                display: none;
+            }
+            label{
+                cursor: pointer;
+                i{
+                    font-size: 2rem;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+

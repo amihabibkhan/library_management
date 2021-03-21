@@ -32,3 +32,12 @@ html{
 p,a,span,i,label{
     font-size: $default;
 }
+body{
+    background: $bg_color;
+    font-family : 'bangla-font';
+}
+// bangla font
+@font-face{
+    font-family : 'bangla-font';
+    src: url('../font/HindSiliguri-Regular.ttf') format('truetype');
+}
