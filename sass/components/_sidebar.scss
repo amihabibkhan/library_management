@@ -4,6 +4,7 @@
     border-radius: 7px;
     box-shadow: $login_box_shadow_light;
     margin-right: .3rem;
+     
 
     .info{
         h3{
@@ -54,3 +55,8 @@
         }
     }
 }
+
+ .stikey{
+     position: sticky;
+     top: 0;
+ }

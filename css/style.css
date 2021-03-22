@@ -242,11 +242,8 @@ nav.navbar {
 .main_content {
   margin: 20px 0; }
   .main_content .main_container {
-    width: 90rem;
+    max-width: 90rem;
     margin: 0 auto; }
-    .main_content .main_container .col-md-5 {
-      position: sticky;
-      top: 1000px; }
 
 .headerSignup {
   background-color: #517da2;
@@ -347,6 +344,10 @@ nav.navbar {
     transition: all 0.2s; }
     .sidebar .info .edit_details_button a:hover {
       background-color: #cbcdd3; }
+
+.stikey {
+  position: sticky;
+  top: 0; }
 
 .post_section {
   background-color: #fff;
