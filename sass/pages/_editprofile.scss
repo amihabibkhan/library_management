@@ -1,0 +1,203 @@
+
+
+
+.edit_profile{
+    background-color:$bg_color;
+    
+    .edit_container{
+        max-width: 80rem;
+        margin: 2rem auto;
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 7px;
+        box-shadow: $login_box_shadow_light;
+
+        .edit_header_close{
+            margin-bottom: 2rem;
+            .header{ 
+                font-size: 2.3rem;
+                font-weight: 800;
+                margin-top: 0.8rem;
+            }
+             
+        }
+        hr{
+            padding: -2rem 0;
+        }
+        .profile_picture {
+            font-size: 2.3rem;
+            font-weight: 700; 
+        }
+        .edit {
+            font-size: 1.4rem;
+            text-decoration: none; 
+            color: #247df2;
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #f7f7f7;
+            border-radius: 0.5rem;
+
+            &:hover{
+                background-color: rgb(226, 226, 226);
+                padding: 0.5rem 1rem;
+                border-radius: 0.5rem;
+            }
+      
+        }
+        .picture{
+            text-align: center;
+            margin-top: 2rem;
+            img{
+                width: 17rem;
+                height: 17rem;
+                border-radius: 50%;
+                box-shadow: $single_friend-box-shadow ;
+            }
+           
+        }
+        .cover_picture{
+            font-size: 2.3rem;
+            font-weight: 700; 
+        }
+        .background_img{ 
+                max-width: 70%;
+                margin: 3rem auto;
+                border-radius: 7px;
+                overflow: hidden;
+
+                img { 
+                    width: 100%;
+            }
+        }
+        .biography{
+            font-size: 2.3rem;
+            font-weight: 700; 
+        }
+        .bio_description{
+            text-align: center;
+            h4{
+                font-size: 2rem;
+                margin-top: 1.5rem;
+            }
+        }
+        .customize_into{
+            font-size: 2.3rem;
+            font-weight: 700; 
+        }
+        .intro_part{
+         .intro_1,.intro_2,.intro_3{
+             margin-left: 2rem;
+             i{
+                font-size: 2rem;
+                color: #92979c;
+             }
+             span{
+                font-size: 1.8rem;
+                font-weight: 500;
+                margin-left: 1.2rem;
+                margin-right: 0.6rem;
+             }
+             a {
+                text-decoration: none;
+                font-size: 1.7rem;
+                color: black;
+                font-weight: 600;
+                text-transform: capitalize;
+                transition: all 0.3s;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+         }
+
+         .intro_4{
+            margin-left: 2.5rem;
+            i{
+                font-size: 2rem;
+                color: #92979c;
+             }
+             span{
+                font-size: 1.8rem;
+                font-weight: 500;
+                margin-left: 1.8rem;
+                margin-right: 0.6rem;
+             }
+             a{
+                text-decoration: none;
+                font-size: 1.7rem;
+                color: black;
+                font-weight: 600;
+                text-transform: capitalize;
+                 transition: all 0.3s;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+             }
+
+         }
+         .intro_5,.intro_6{
+            margin-left: 2rem;
+            i{
+                font-size: 2rem;
+                color: #92979c;
+             }
+             span{
+                font-size: 1.8rem;
+                font-weight: 500;
+                margin-left: 1.5rem;
+                margin-right: 0.6rem;
+             }
+             a{
+                text-decoration: none;
+                font-size: 1.7rem;
+                color: black;
+                font-weight: 600;
+                text-transform: capitalize;
+                 transition: all 0.3s;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+             }
+
+         }
+
+        }
+        .about_info{
+            .about_info_edit{
+                text-align: center;
+                background-color:#e7f3ff; 
+                border-radius: .5rem;
+                padding: 0.8rem 0;
+                margin-top: 2rem;
+                transition: all 0.3s;
+                font-size: 1.8rem;
+                text-decoration: none;
+                font-weight: 600;
+                display: block;
+
+                &:hover{
+                    background-color: rgb(226, 226, 226);
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+
+
+
+.edit_profile .edit_container .edit {
+	font-size: 1.4rem;
+	text-decoration: none; 
+	color: #247df2;
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	background-color: #f7f7f7;
+	border-radius: 0.5rem;
+}

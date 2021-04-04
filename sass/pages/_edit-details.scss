@@ -1,0 +1,138 @@
+.edit_details{
+    .edit_info{
+        background-color: #fff;
+        border-radius: 7px;
+        box-shadow: $login_box_shadow_light;
+        .nav{
+            flex-direction: column;
+            padding: 2rem 1rem;
+            
+            li{
+                margin: 4px 0;
+                a{
+                    color: #66686C;
+                    text-decoration: none;
+                    font-size: 1.8rem;
+                    display: block;
+                    padding: 5px 8px;
+                    transition: all 0.2s;
+                    border-radius: 5px;
+
+                    &.active{
+                        background-color: #e7f3ff;
+                    }
+                    &:hover{
+                        background-color: #F0F2F5;
+                        
+                    }
+                    &:active{
+                        background-color: #e7f3ff;
+                    }
+                }
+                .edit_details_title{
+                    font-size: 30px;
+                    padding-left: 8px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .tab_details{
+            border-left: 1px solid #999;
+            .tab-content{
+                height: auto !important;
+                padding: 2rem 1rem;
+                .overview{
+                    &:not(:last-child){
+                        margin-bottom: 3rem;
+                    }
+                    .overview_details{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        height: 100%;
+                        .overview_details_icon{
+                            margin-top: 2px;
+                            i{
+                                font-size: 2rem;
+                                color: #92979c;
+                                margin-right: 1rem;
+                            }
+                        }
+                        .overview_text{
+                            p{
+                                font-size: 1.6rem;
+                                margin: 0;
+                                color: #020202;
+                            }
+                        }
+                    }
+                    .overview_icon{
+                        display: flex;
+                        flex-direction: row;
+                        color: #92979c;
+                        justify-content: space-evenly;
+                        .privacy_icon{
+                            i{
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                background-color: transparent;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 1.6rem;
+                                cursor: pointer;
+                                transition: all 0.2s;
+                                &:hover{
+                                    background-color: #f0f2f5;
+                                }
+                            }
+                        }
+                        .editor_icon{
+                            i{
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                background-color: #f0f2f5;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 1.6rem;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+                .add_more_item{
+
+                    .add_button{
+                        font-size: 1.6rem;
+                        box-shadow: unset;
+                        margin: 1rem 0;
+                        i{
+                            font-size: 1.6rem; 
+                            margin-right: 5px;
+                        }
+                    }
+                    form {
+                        *{
+                            margin-bottom: .5rem;
+                        }
+                       input{
+                           font-size: 1.6rem;
+                           box-shadow: unset;
+                       }
+                       .bottom_btn{
+                           box-shadow: unset;
+                           font-size: 1.6rem;
+                       }
+                    
+
+                    }
+                }
+            }
+        }
+    }
+}

@@ -25,55 +25,59 @@
         <div class="profile-banner__container">
             <div class="profile__cover"> 
                 <div class="photo">
-                    <div class="profile_image">
-                        <img src="images/profile-picture-use.jpg" alt="">  
-                    </div> 
-                    <input type="file" id="profile"><label for="profile"><i class="fas fa-camera"></i></label>
+                    <label for="profile">
+                        <div class="profile_image">
+                            <img src="images/profile-picture-use.jpg" alt="">  
+                        </div> 
+                        <input type="file" id="profile"><i class="fas fa-camera"></i>
+                    </label>
                 </div>
                 <div class="cover_upload">
-                    <input type="file" id="cover_phpto"><label for="cover_phpto"><i class="fas fa-camera me-sm-2 mx-auto"></i><span class="d-sm-inline d-none">Edit cover Photo</span></label>
+                    <input type="file" id="cover_phpto">
+                    <label for="cover_phpto">
+                         <div class="cover_photo_icon">
+                            <i class="fas fa-camera me-sm-2 mx-auto"></i> 
+                         </div>
+                         <div class="cover_photo_text">
+                            <span class="d-sm-inline d-none">Edit cover Photo</span> 
+                         </div>
+                    </label>
                 </div>
             </div>
             <div class="profile_text">
                 <h2 class="name">Md minhaj mia</h2>
                 <div class="profile_text_edit-still" id="profile_edit_button">
                     <p class="bio">I am an imran khan</p>
-                    <a href="#" class="" onclick="show_edit_form()">Edit</a>
+                    <button class="edit_button btn btn-primary" onclick="show_edit_form()">ইডিট করুন</button>
                 </div>
                 <div class="profile_text_edit-form d-none" id="profile_edit_form">
                     <textarea name="" id="" class="form-control">ঘুম থেকে উঠে সকালেই যদি নতুন কিছু শিখে ফেলি তাহলে সারাদিন আমার মহা আনন্দে কাটে।</textarea>
                     <p>22 characters remaining</p>
                     <div class="profile_text_edit-form_button">
-                        <button onclick="show_edit_button_container()">Cancel</button>
-                        <button onclick="show_edit_button_container()">Save</button>
+                        <button class="cancel_button btn btn-primary" onclick="show_edit_button_container()">ক্যান্সেল করুন</button>
+                        <button class="save_button btn btn-primary" onclick="show_edit_button_container()">সেইভ করুন</button>
                     </div>
                 </div>  
             </div>
             <hr>
             <!-- menu start-->
-            <nav class="navbar navbar-expand-md navbar-light bg-light">
-                <div class="container">
-                  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 custom_menu">
-                       <li><a href="#" class="menu-item">posts</a></li>
-                       <li><a href="#" class="menu-item">about</a></li>
-                       <li><a href="#" class="menu-item">friends</a></li>
-                       <li><a href="#" class="menu-item">books</a></li>
+            
+            <nav class="navbarMenu"> 
+                  <div class="navContainer" id="">
+                    <ul class="custom_menu">
+                       <li><a href="profile.html" class="menu-item">posts</a></li>
+                       <li><a href="edit_details.html" class="menu-item">about</a></li>
+                       <li><a href="friends.html" class="menu-item">friends</a></li>
+                       <li><a href="bookUpload.html" class="menu-item">books</a></li>
                        <li><a href="#" class="menu-item">photos</a></li>
                     </ul>
-                    <div class="menu_button ms-auto">
-                        <a href="#" class="add_to_book"><i class="fas fa-plus-circle"></i>Add New Book</a>
-                        <a href="#" class="edit_profile"><i class="fas fa-pen"></i>Edit Profile</a> 
+                    <div class="menu_button">
+                        <a href="bookUpload.html" class="add_to_book"><i class="fas fa-plus-circle"></i>Add New Book</a>
+                        <a href="edit_profile.html" class="edit_profile"><i class="fas fa-pen"></i>Edit Profile</a> 
                     </div>
-                  </div>
-                </div>
+                  </div> 
               </nav>
+           
             <!-- menu end-->
 
         </div>
@@ -113,7 +117,7 @@
                                 <li><a href="https://www.youtube.com/channel/UC63ClCdfDe1-0ncGLHR3HRw"><i class="fab fa-youtube"></i>youtube Channel</a></li>
                             </ul>
                             <div class="edit_details_button">
-                                <a href="#">Edit details</a>
+                                <a href="edit_details.html">Edit details</a>
                             </div>
                         </div>
                     </div>
@@ -167,17 +171,42 @@
                             <div class="row">
                                 <div class="col-sm-4">
                                     <div class="book_review">
-                                        <input type="file" id="cover_phpto"><label for="cover_phpto"><i class="fas fa-book-open me-sm-2 mx-auto"></i><span class="d-sm-inline d-none">Book Review</span></label>
+                                        <input type="file" id="cover_phpto">
+                                        <label for="cover_phpto">
+                                            <div class="post_option_icon">
+                                                <i class="fas fa-book-open me-sm-3 mx-auto"></i>
+                                            </div>
+                                            <div class="post_option_text">
+                                                <span class="d-sm-inline d-none">Book Review</span>
+                                            </div>
+                                        </label>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="photos">
-                                        <input type="file" id="cover_phpto"><label for="cover_phpto"><i class="fas fa-images me-sm-2 mx-auto"></i><span class="d-sm-inline d-none">Photos</span></label>
+                                        <input type="file" id="cover_phpto">
+                                        <label for="cover_phpto">
+                                            <div class="post_option_icon">
+                                                 <i class="fas fa-images me-sm-3 mx-auto"></i>
+                                            </div>
+                                           <div class="post_option_text">
+                                                <span class="d-sm-inline d-none">Photos</span>
+                                           </div>
+                                           
+                                        </label>
                                     </div> 
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="write" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        <span class="d-sm-inline d-none"><i class="far fa-edit me-sm-2 mx-auto"></i>Write</span>
+                                       <label for="">
+                                        <div class="post_option_icon"> 
+                                            <i class="far fa-edit me-sm-3 mx-auto"></i>
+                                        </div>
+                                        <div class="post_option_text">
+                                            <span class="d-sm-inline d-none">Write
+                                            </span>
+                                        </div>
+                                       </label>
                                     </div> 
                                 </div>
                             </div>
@@ -205,10 +234,12 @@
                             
                         </div>
                         <hr>
+                        
                         <div class="photo_upload_post_comment">
                             <div class="like_comment">
-                                <span><i class="far fa-thumbs-up"></i>লাইক(20k)</span>
+                                <span><i class="far fa-thumbs-up" ></i>লাইক(20k)</span>
                                 <span><i class="far fa-comment-alt"></i>কমেন্ট(200)</span>
+                                <span><i class="far fa-share-square"></i>শেয়ার(200)</span>
                             </div>
                             
                             <!-- comment box -->
@@ -228,7 +259,7 @@
                                                     <p class="author_text">Assalamu alaikum Oa rohmatullah Assalamu alaikum Oa rohmatullah</p> 
                                                 </div>
                                                 <div class="hide_option">
-                                                    <span class="hide_3dot"><i class="fas fa-ellipsis-h"></i></span>
+                                                    <span class="hide_3dot"><i data-bs-toggle="tooltip" data-bs-placement="top" title="Hide or report this" class="fas fa-ellipsis-h"></i></span> 
                                                 </div>
                                             </div>
                                             <div class="reply">
@@ -322,6 +353,7 @@
                             <div class="like_comment">
                                 <span><i class="far fa-thumbs-up"></i>লাইক(20k)</span>
                                 <span><i class="far fa-comment-alt"></i>কমেন্ট(200)</span>
+                                <span><i class="far fa-share-square"></i>শেয়ার(200)</span>
                             </div>
                             
                             <!-- comment box -->
@@ -436,6 +468,7 @@
                             <div class="like_comment">
                                 <span><i class="far fa-thumbs-up"></i>লাইক(20k)</span>
                                 <span><i class="far fa-comment-alt"></i>কমেন্ট(200)</span>
+                                <span><i class="far fa-share-square"></i>শেয়ার(200)</span>
                             </div>
                             
                             <!-- comment box -->
@@ -538,8 +571,19 @@
     <!-- bootstrap js -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
+
     <!-- Custom js -->
     <script src="js/script.js"></script>
+
+    <script>
+        
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+
+
+    </script>
 
 </body>
 </html>

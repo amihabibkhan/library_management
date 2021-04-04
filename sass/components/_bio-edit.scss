@@ -1,0 +1,34 @@
+.profile_text{
+    .profile_text_edit-still{
+        
+        button.edit_button{
+            border-radius: 5px;
+            padding: 5px 10px; 
+            font-size: 1.4rem;
+            border: 0;
+        }
+    }
+    .profile_text_edit-form{
+
+        textarea.form-control{
+            width:30rem;
+            margin: auto;
+            resize: none; 
+            height: 12rem;
+            font-size: 1.6rem;
+            box-shadow: $single_friend-box-shadow;
+    
+            &:focus{
+                box-shadow: $login_box_shadow;
+            }
+        } 
+        .profile_text_edit-form_button{
+            .cancel_button,
+            .save_button{
+                font-size: 1.4rem;
+                margin: 0 5px;
+            }
+        }
+    }
+}
+

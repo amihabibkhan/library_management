@@ -32,63 +32,99 @@ p, a, span, i, label {
 
 body {
   background: #f0f2f5;
-  font-family: 'bangla-font'; }
+  font-family: 'bangla-font_2'; }
 
 @font-face {
-  font-family: 'bangla-font';
+  font-family: 'bangla-font_1';
   src: url("../font/HindSiliguri-Regular.ttf") format("truetype"); }
 
-nav.navbar {
+@font-face {
+  font-family: 'bangla-font_2';
+  src: url("../font/RuhulAminUnicode.ttf") format("truetype"); }
+
+nav.navbarMenu {
   padding: 0; }
-  nav.navbar ul.custom_menu li a {
-    text-decoration: none;
-    color: #66686C;
-    text-transform: capitalize;
-    font-size: 1.6rem;
-    padding: 1.6rem;
-    display: block;
-    border-radius: 5px;
-    border-bottom: 5px solid transparent;
-    outline: 0;
-    transition: all 0.3s; }
-    nav.navbar ul.custom_menu li a:hover {
-      background-color: #dfe2e6; }
-    nav.navbar ul.custom_menu li a.active {
-      color: #1876f2;
-      border-radius: 0;
-      border-color: #1876f2; }
-      nav.navbar ul.custom_menu li a.active:hover {
-        background-color: transparent; }
-  nav.navbar .menu_button .add_to_book {
-    font-size: 1.6rem;
-    background: #1876f2;
-    border-radius: 5px;
-    padding: 7px 2rem;
-    color: #fff;
-    text-decoration: none;
-    transition: all .3s;
-    margin-right: .5rem; }
-    nav.navbar .menu_button .add_to_book:hover {
-      background: #1058b6; }
-    nav.navbar .menu_button .add_to_book i {
-      margin-right: 5px; }
-  nav.navbar .menu_button .edit_profile {
-    font-size: 1.6rem;
-    background: #1876f2;
-    border-radius: 5px;
-    padding: 7px 2rem;
-    color: #fff;
-    text-decoration: none;
-    transition: all .3s; }
-    nav.navbar .menu_button .edit_profile:hover {
-      background: #1058b6; }
-    nav.navbar .menu_button .edit_profile i {
-      margin-right: 5px; }
+  nav.navbarMenu .navContainer {
+    max-width: 98rem;
+    margin: auto;
+    display: flex;
+    align-items: center; }
+    nav.navbarMenu .navContainer ul.custom_menu {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 0; }
+      nav.navbarMenu .navContainer ul.custom_menu li a {
+        text-decoration: none;
+        color: #66686C;
+        text-transform: capitalize;
+        font-size: 1.6rem;
+        padding: 1.6rem;
+        display: block;
+        border-radius: 5px;
+        border-bottom: 5px solid transparent;
+        outline: 0;
+        transition: all 0.3s; }
+        nav.navbarMenu .navContainer ul.custom_menu li a:hover {
+          background-color: #dfe2e6; }
+        nav.navbarMenu .navContainer ul.custom_menu li a.active {
+          color: #1876f2;
+          border-radius: 0;
+          border-color: #1876f2; }
+          nav.navbarMenu .navContainer ul.custom_menu li a.active:hover {
+            background-color: transparent; }
+    nav.navbarMenu .navContainer .menu_button {
+      margin-left: auto;
+      margin-right: 2rem; }
+      nav.navbarMenu .navContainer .menu_button .add_to_book {
+        font-size: 1.6rem;
+        background: #1876f2;
+        border-radius: 5px;
+        padding: 5px 1rem;
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        transition: all .3s;
+        margin-right: .5rem; }
+        nav.navbarMenu .navContainer .menu_button .add_to_book:hover {
+          background: #1058b6; }
+        nav.navbarMenu .navContainer .menu_button .add_to_book i {
+          margin-right: 5px; }
+      nav.navbarMenu .navContainer .menu_button .edit_profile {
+        font-size: 1.6rem;
+        background: #1876f2;
+        border-radius: 5px;
+        padding: 7px 2rem;
+        color: #fff;
+        text-decoration: none;
+        transition: all .3s; }
+        nav.navbarMenu .navContainer .menu_button .edit_profile:hover {
+          background: #1058b6; }
+        nav.navbarMenu .navContainer .menu_button .edit_profile i {
+          margin-right: 5px; }
+
+.main_nav {
+  background-color: #fff; }
+  .main_nav .nab_container {
+    max-width: 98rem;
+    margin: auto; }
+
+.stikey_menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
+  z-index: 99; }
+  .stikey_menu .stikey_container {
+    max-width: 98rem;
+    margin: auto; }
 
 .loginSignup {
   background-color: #f0f2f5;
-  height: 95vh;
-  font-family: 'bangla-font'; }
+  height: 95vh; }
   .loginSignup .loginSignup__container {
     max-width: 98rem;
     margin: auto;
@@ -111,8 +147,6 @@ nav.navbar {
       background-color: #fff;
       border-radius: 1rem;
       transition: all .3s; }
-      .loginSignup .loginSignup__container .loginSignup_form:hover {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.3); }
       .loginSignup .loginSignup__container .loginSignup_form form input::placeholder,
       .loginSignup .loginSignup__container .loginSignup_form form input {
         font-size: 1.6rem;
@@ -142,7 +176,6 @@ nav.navbar {
           padding: .7rem 1rem;
           margin: 1.5rem 0 -1.5rem;
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-          width: 20rem;
           text-align: center; }
       .loginSignup .loginSignup__container .loginSignup_form form .gender .input-group-text label {
         width: 80%;
@@ -167,6 +200,8 @@ nav.navbar {
 .profile-banner {
   background-image: linear-gradient(#acceed, #ffffff);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1); }
+  .profile-banner hr {
+    margin: 0; }
   .profile-banner__container {
     max-width: 98rem;
     margin: auto; }
@@ -198,23 +233,23 @@ nav.navbar {
             width: 100%; }
         .profile-banner__container .profile__cover .photo input {
           display: none; }
-        .profile-banner__container .profile__cover .photo label {
+        .profile-banner__container .profile__cover .photo label i {
+          font-size: 20px;
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          background: #e4e6eb;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          transition: all .2s;
           position: absolute;
           top: 100%;
           left: 100%;
           transform: translate(-100%, -100%); }
-          .profile-banner__container .profile__cover .photo label i {
-            font-size: 30px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: #e4e6eb;
-            line-height: 50px;
-            text-align: center;
-            cursor: pointer;
-            transition: all .2s; }
-            .profile-banner__container .profile__cover .photo label i:hover {
-              background: #bbc0ce; }
+          .profile-banner__container .profile__cover .photo label i:hover {
+            background: #bbc0ce; }
       .profile-banner__container .profile__cover .cover_upload {
         background: #e9ebf0;
         padding: 5px 10px;
@@ -225,13 +260,18 @@ nav.navbar {
         .profile-banner__container .profile__cover .cover_upload input {
           display: none; }
         .profile-banner__container .profile__cover .cover_upload label {
-          cursor: pointer; }
-          .profile-banner__container .profile__cover .cover_upload label i {
-            font-size: 25px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .profile-banner__container .profile__cover .cover_upload label .cover_photo_icon i {
+            font-size: 20px;
             margin-right: 5px; }
+          .profile-banner__container .profile__cover .cover_upload label .cover_photo_text {
+            margin-bottom: 2px; }
     .profile-banner__container .profile_text {
       text-align: center;
-      padding: 30px 0; }
+      padding: 22px 0 10px; }
       .profile-banner__container .profile_text .name {
         font-size: 30px;
         color: #000;
@@ -301,6 +341,518 @@ nav.navbar {
         font-size: 12px;
         font-weight: bold; }
 
+.book_upload_form .upload_form_title h2 {
+  font-size: 2.5rem; }
+
+.book_upload_form input,
+.book_upload_form textarea,
+.book_upload_form select {
+  font-size: 1.63rem;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 7px 7px; }
+  .book_upload_form input.form-select,
+  .book_upload_form textarea.form-select,
+  .book_upload_form select.form-select {
+    background-image: linear-gradient(rgba(148, 143, 143, 0.5), rgba(148, 143, 143, 0.5)), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-position: right;
+    background-size: 16px 50px; }
+    .book_upload_form input.form-select:focus,
+    .book_upload_form textarea.form-select:focus,
+    .book_upload_form select.form-select:focus {
+      box-shadow: 0 0 9px 1px #e1e1e1; }
+  .book_upload_form input.form-control:focus,
+  .book_upload_form textarea.form-control:focus,
+  .book_upload_form select.form-control:focus {
+    box-shadow: 0 0 9px 1px #e1e1e1; }
+
+.book_upload_form input[type="file"] {
+  padding: 3px 7px; }
+
+.book_upload_form .tagAdd input {
+  padding: 0;
+  margin-bottom: 0;
+  width: 100%; }
+
+.book_upload_form .form-control::file-selector-button {
+  padding: 8px 7px; }
+
+.book_upload_form textarea {
+  border-radius: 10px; }
+
+.book_upload_form .upload_left_input,
+.book_upload_form .upload_form_title {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 7px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1); }
+  .book_upload_form .upload_left_input .writers_name .writers_name_input,
+  .book_upload_form .upload_left_input .writers_name .publishers_name_input,
+  .book_upload_form .upload_left_input .publishers_name .writers_name_input,
+  .book_upload_form .upload_left_input .publishers_name .publishers_name_input,
+  .book_upload_form .upload_form_title .writers_name .writers_name_input,
+  .book_upload_form .upload_form_title .writers_name .publishers_name_input,
+  .book_upload_form .upload_form_title .publishers_name .writers_name_input,
+  .book_upload_form .upload_form_title .publishers_name .publishers_name_input {
+    position: relative; }
+  .book_upload_form .upload_left_input .writers_name .name_suggestion,
+  .book_upload_form .upload_left_input .publishers_name .name_suggestion,
+  .book_upload_form .upload_form_title .writers_name .name_suggestion,
+  .book_upload_form .upload_form_title .publishers_name .name_suggestion {
+    background-color: #f0f2f5;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
+    max-height: 250px;
+    overflow-y: scroll;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 9; }
+    .book_upload_form .upload_left_input .writers_name .name_suggestion ul,
+    .book_upload_form .upload_left_input .publishers_name .name_suggestion ul,
+    .book_upload_form .upload_form_title .writers_name .name_suggestion ul,
+    .book_upload_form .upload_form_title .publishers_name .name_suggestion ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .book_upload_form .upload_left_input .writers_name .name_suggestion ul li,
+      .book_upload_form .upload_left_input .publishers_name .name_suggestion ul li,
+      .book_upload_form .upload_form_title .writers_name .name_suggestion ul li,
+      .book_upload_form .upload_form_title .publishers_name .name_suggestion ul li {
+        border-bottom: 1px solid #fff;
+        display: block;
+        font-size: 1.6rem;
+        padding: 5px;
+        cursor: default;
+        transition: all 0.2s; }
+        .book_upload_form .upload_left_input .writers_name .name_suggestion ul li:hover,
+        .book_upload_form .upload_left_input .publishers_name .name_suggestion ul li:hover,
+        .book_upload_form .upload_form_title .writers_name .name_suggestion ul li:hover,
+        .book_upload_form .upload_form_title .publishers_name .name_suggestion ul li:hover {
+          background-color: #f9f9f9; }
+  .book_upload_form .upload_left_input .tagAdd .tag.label.label-info,
+  .book_upload_form .upload_form_title .tagAdd .tag.label.label-info {
+    background: #0d6efd;
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-bottom: 5px; }
+  .book_upload_form .upload_left_input .tagAdd .bootstrap-tagsinput,
+  .book_upload_form .upload_form_title .tagAdd .bootstrap-tagsinput {
+    width: 100%;
+    border-radius: 10px; }
+
+.book_upload_form .upload_right_input {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 7px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1); }
+  .book_upload_form .upload_right_input .submit_btn {
+    text-align: center; }
+    .book_upload_form .upload_right_input .submit_btn input {
+      margin-bottom: 0; }
+
+.margin_bottom {
+  margin-bottom: 100px; }
+
+.friends_part {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 7px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-right: .3rem; }
+  .friends_part .friends_header {
+    text-align: center; }
+    .friends_part .friends_header h2 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      line-height: 23px;
+      margin-bottom: 0; }
+    .friends_part .friends_header input {
+      font-size: 1.6rem;
+      border-radius: 50px;
+      padding-left: 10px; }
+      .friends_part .friends_header input:focus {
+        box-shadow: unset; }
+    .friends_part .friends_header span {
+      border-radius: 0 50px 50px 0; }
+  .friends_part .all_friends .single_friend {
+    padding: 1.5rem;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    margin-top: 1rem; }
+    .friends_part .all_friends .single_friend .profile_image {
+      width: 100px;
+      height: 100px;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      overflow: hidden; }
+      .friends_part .all_friends .single_friend .profile_image img {
+        width: 100%; }
+    .friends_part .all_friends .single_friend .friend_name {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 2rem; }
+      .friends_part .all_friends .single_friend .friend_name a {
+        font-size: 1.6rem;
+        color: #000;
+        font-weight: 700;
+        text-decoration: none;
+        transition: all 0.2s; }
+        .friends_part .all_friends .single_friend .friend_name a:hover {
+          text-decoration: underline; }
+      .friends_part .all_friends .single_friend .friend_name p {
+        font-size: 1.4rem;
+        color: #64666A; }
+    .friends_part .all_friends .single_friend .friend_dots {
+      height: 100%;
+      display: flex;
+      justify-content: end;
+      align-items: center; }
+      .friends_part .all_friends .single_friend .friend_dots a {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        cursor: pointer;
+        text-decoration: none;
+        color: #000;
+        transition: all .2s; }
+        .friends_part .all_friends .single_friend .friend_dots a:hover {
+          background-color: #f0f2f5; }
+
+.library_part .library_header {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 7px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-right: .3rem;
+  text-align: center; }
+  .library_part .library_header .col-md-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .library_part .library_header h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 23px;
+    margin-bottom: 0; }
+  .library_part .library_header input {
+    font-size: 1.6rem;
+    border-radius: 50px;
+    padding-left: 10px; }
+    .library_part .library_header input:focus {
+      box-shadow: unset; }
+  .library_part .library_header span {
+    border-radius: 0 50px 50px 0; }
+
+.library_part .all_books {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 7px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-right: .3rem;
+  margin-top: 10px;
+  text-align: center; }
+  .library_part .all_books .single_book {
+    border-radius: 7px;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    transition: all 0.5s;
+    overflow: hidden;
+    position: relative; }
+    .library_part .all_books .single_book:hover {
+      box-shadow: inset 0px 0px 10px 0px #a8a7a7; }
+    .library_part .all_books .single_book:hover .expand_book {
+      opacity: 1;
+      visibility: visible; }
+    .library_part .all_books .single_book:hover .expand_book i {
+      color: #ffb607;
+      font-size: 3rem; }
+    .library_part .all_books .single_book .book {
+      height: 250px;
+      overflow: hidden; }
+      .library_part .all_books .single_book .book img {
+        max-width: 100%;
+        height: 100%; }
+    .library_part .all_books .single_book .book_name {
+      margin-top: 10px; }
+    .library_part .all_books .single_book .expand_book {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.5);
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s; }
+      .library_part .all_books .single_book .expand_book a {
+        height: 48px;
+        width: 50px;
+        background: #f9f9f9;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none; }
+      .library_part .all_books .single_book .expand_book i {
+        color: #fff;
+        font-size: .1rem;
+        transition: all 0.5s; }
+
+.book_details {
+  background-color: #fff;
+  padding: 6rem 2rem;
+  border-radius: 7px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1); }
+  .book_details .book_details_text .still_title {
+    display: flex;
+    justify-content: space-between; }
+
+.edit_details .edit_info {
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1); }
+  .edit_details .edit_info .nav {
+    flex-direction: column;
+    padding: 2rem 1rem; }
+    .edit_details .edit_info .nav li {
+      margin: 4px 0; }
+      .edit_details .edit_info .nav li a {
+        color: #66686C;
+        text-decoration: none;
+        font-size: 1.8rem;
+        display: block;
+        padding: 5px 8px;
+        transition: all 0.2s;
+        border-radius: 5px; }
+        .edit_details .edit_info .nav li a.active {
+          background-color: #e7f3ff; }
+        .edit_details .edit_info .nav li a:hover {
+          background-color: #F0F2F5; }
+        .edit_details .edit_info .nav li a:active {
+          background-color: #e7f3ff; }
+      .edit_details .edit_info .nav li .edit_details_title {
+        font-size: 30px;
+        padding-left: 8px;
+        font-weight: 600; }
+  .edit_details .edit_info .tab_details {
+    border-left: 1px solid #999; }
+    .edit_details .edit_info .tab_details .tab-content {
+      height: auto !important;
+      padding: 2rem 1rem; }
+      .edit_details .edit_info .tab_details .tab-content .overview:not(:last-child) {
+        margin-bottom: 3rem; }
+      .edit_details .edit_info .tab_details .tab-content .overview .overview_details {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%; }
+        .edit_details .edit_info .tab_details .tab-content .overview .overview_details .overview_details_icon {
+          margin-top: 2px; }
+          .edit_details .edit_info .tab_details .tab-content .overview .overview_details .overview_details_icon i {
+            font-size: 2rem;
+            color: #92979c;
+            margin-right: 1rem; }
+        .edit_details .edit_info .tab_details .tab-content .overview .overview_details .overview_text p {
+          font-size: 1.6rem;
+          margin: 0;
+          color: #020202; }
+      .edit_details .edit_info .tab_details .tab-content .overview .overview_icon {
+        display: flex;
+        flex-direction: row;
+        color: #92979c;
+        justify-content: space-evenly; }
+        .edit_details .edit_info .tab_details .tab-content .overview .overview_icon .privacy_icon i {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: transparent;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.6rem;
+          cursor: pointer;
+          transition: all 0.2s; }
+          .edit_details .edit_info .tab_details .tab-content .overview .overview_icon .privacy_icon i:hover {
+            background-color: #f0f2f5; }
+        .edit_details .edit_info .tab_details .tab-content .overview .overview_icon .editor_icon i {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: #f0f2f5;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.6rem;
+          cursor: pointer; }
+      .edit_details .edit_info .tab_details .tab-content .add_more_item .add_button {
+        font-size: 1.6rem;
+        box-shadow: unset;
+        margin: 1rem 0; }
+        .edit_details .edit_info .tab_details .tab-content .add_more_item .add_button i {
+          font-size: 1.6rem;
+          margin-right: 5px; }
+      .edit_details .edit_info .tab_details .tab-content .add_more_item form * {
+        margin-bottom: .5rem; }
+      .edit_details .edit_info .tab_details .tab-content .add_more_item form input {
+        font-size: 1.6rem;
+        box-shadow: unset; }
+      .edit_details .edit_info .tab_details .tab-content .add_more_item form .bottom_btn {
+        box-shadow: unset;
+        font-size: 1.6rem; }
+
+.edit_profile {
+  background-color: #f0f2f5; }
+  .edit_profile .edit_container {
+    max-width: 80rem;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 7px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1); }
+    .edit_profile .edit_container .edit_header_close {
+      margin-bottom: 2rem; }
+      .edit_profile .edit_container .edit_header_close .header {
+        font-size: 2.3rem;
+        font-weight: 800;
+        margin-top: 0.8rem; }
+    .edit_profile .edit_container hr {
+      padding: -2rem 0; }
+    .edit_profile .edit_container .profile_picture {
+      font-size: 2.3rem;
+      font-weight: 700; }
+    .edit_profile .edit_container .edit {
+      font-size: 1.4rem;
+      text-decoration: none;
+      color: #247df2;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #f7f7f7;
+      border-radius: 0.5rem; }
+      .edit_profile .edit_container .edit:hover {
+        background-color: #e2e2e2;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem; }
+    .edit_profile .edit_container .picture {
+      text-align: center;
+      margin-top: 2rem; }
+      .edit_profile .edit_container .picture img {
+        width: 17rem;
+        height: 17rem;
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1); }
+    .edit_profile .edit_container .cover_picture {
+      font-size: 2.3rem;
+      font-weight: 700; }
+    .edit_profile .edit_container .background_img {
+      max-width: 70%;
+      margin: 3rem auto;
+      border-radius: 7px;
+      overflow: hidden; }
+      .edit_profile .edit_container .background_img img {
+        width: 100%; }
+    .edit_profile .edit_container .biography {
+      font-size: 2.3rem;
+      font-weight: 700; }
+    .edit_profile .edit_container .bio_description {
+      text-align: center; }
+      .edit_profile .edit_container .bio_description h4 {
+        font-size: 2rem;
+        margin-top: 1.5rem; }
+    .edit_profile .edit_container .customize_into {
+      font-size: 2.3rem;
+      font-weight: 700; }
+    .edit_profile .edit_container .intro_part .intro_1, .edit_profile .edit_container .intro_part .intro_2, .edit_profile .edit_container .intro_part .intro_3 {
+      margin-left: 2rem; }
+      .edit_profile .edit_container .intro_part .intro_1 i, .edit_profile .edit_container .intro_part .intro_2 i, .edit_profile .edit_container .intro_part .intro_3 i {
+        font-size: 2rem;
+        color: #92979c; }
+      .edit_profile .edit_container .intro_part .intro_1 span, .edit_profile .edit_container .intro_part .intro_2 span, .edit_profile .edit_container .intro_part .intro_3 span {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-left: 1.2rem;
+        margin-right: 0.6rem; }
+      .edit_profile .edit_container .intro_part .intro_1 a, .edit_profile .edit_container .intro_part .intro_2 a, .edit_profile .edit_container .intro_part .intro_3 a {
+        text-decoration: none;
+        font-size: 1.7rem;
+        color: black;
+        font-weight: 600;
+        text-transform: capitalize;
+        transition: all 0.3s; }
+        .edit_profile .edit_container .intro_part .intro_1 a:hover, .edit_profile .edit_container .intro_part .intro_2 a:hover, .edit_profile .edit_container .intro_part .intro_3 a:hover {
+          text-decoration: underline; }
+    .edit_profile .edit_container .intro_part .intro_4 {
+      margin-left: 2.5rem; }
+      .edit_profile .edit_container .intro_part .intro_4 i {
+        font-size: 2rem;
+        color: #92979c; }
+      .edit_profile .edit_container .intro_part .intro_4 span {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-left: 1.8rem;
+        margin-right: 0.6rem; }
+      .edit_profile .edit_container .intro_part .intro_4 a {
+        text-decoration: none;
+        font-size: 1.7rem;
+        color: black;
+        font-weight: 600;
+        text-transform: capitalize;
+        transition: all 0.3s; }
+        .edit_profile .edit_container .intro_part .intro_4 a:hover {
+          text-decoration: underline; }
+    .edit_profile .edit_container .intro_part .intro_5, .edit_profile .edit_container .intro_part .intro_6 {
+      margin-left: 2rem; }
+      .edit_profile .edit_container .intro_part .intro_5 i, .edit_profile .edit_container .intro_part .intro_6 i {
+        font-size: 2rem;
+        color: #92979c; }
+      .edit_profile .edit_container .intro_part .intro_5 span, .edit_profile .edit_container .intro_part .intro_6 span {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-left: 1.5rem;
+        margin-right: 0.6rem; }
+      .edit_profile .edit_container .intro_part .intro_5 a, .edit_profile .edit_container .intro_part .intro_6 a {
+        text-decoration: none;
+        font-size: 1.7rem;
+        color: black;
+        font-weight: 600;
+        text-transform: capitalize;
+        transition: all 0.3s; }
+        .edit_profile .edit_container .intro_part .intro_5 a:hover, .edit_profile .edit_container .intro_part .intro_6 a:hover {
+          text-decoration: underline; }
+    .edit_profile .edit_container .about_info .about_info_edit {
+      text-align: center;
+      background-color: #e7f3ff;
+      border-radius: .5rem;
+      padding: 0.8rem 0;
+      margin-top: 2rem;
+      transition: all 0.3s;
+      font-size: 1.8rem;
+      text-decoration: none;
+      font-weight: 600;
+      display: block; }
+      .edit_profile .edit_container .about_info .about_info_edit:hover {
+        background-color: #e2e2e2; }
+
+.edit_profile .edit_container .edit {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #247df2;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #f7f7f7;
+  border-radius: 0.5rem; }
+
 .sidebar {
   background-color: #fff;
   padding: 2rem;
@@ -347,7 +899,7 @@ nav.navbar {
 
 .stikey {
   position: sticky;
-  top: 0; }
+  top: 65px; }
 
 .post_section {
   background-color: #fff;
@@ -389,9 +941,19 @@ nav.navbar {
   .post_section .post_option .photos,
   .post_section .post_option .write {
     background: #f1f1f3;
-    padding: 5px 10px;
+    padding: 5px 10px 0;
     border-radius: 5px;
     transition: all .2s; }
+    .post_section .post_option .book_review label,
+    .post_section .post_option .photos label,
+    .post_section .post_option .write label {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .post_section .post_option .book_review label .post_option_text,
+      .post_section .post_option .photos label .post_option_text,
+      .post_section .post_option .write label .post_option_text {
+        margin-bottom: 7px; }
     .post_section .post_option .book_review:hover,
     .post_section .post_option .photos:hover,
     .post_section .post_option .write:hover {
@@ -408,7 +970,7 @@ nav.navbar {
       .post_section .post_option .photos label i,
       .post_section .post_option .write label i {
         font-size: 2rem;
-        margin-right: 5px; }
+        margin-right: 10px; }
 
 .photo_upload_post {
   background-color: #fff;
@@ -500,7 +1062,8 @@ nav.navbar {
         background: #f0f2f5;
         display: inline-block;
         border-radius: 20px;
-        padding: .8rem 1.2rem; }
+        padding: .8rem 1.2rem;
+        margin-left: 1.3rem; }
         .photo_upload_post .photo_upload_post_comment .comment_box .main_comment .comment_text .name_text .author_name,
         .photo_upload_post .photo_upload_post_comment .comment_box .reply_comment .comment_text .name_text .author_name {
           font-size: 1.6rem;
@@ -537,7 +1100,6 @@ nav.navbar {
       .photo_upload_post .photo_upload_post_comment .comment_box .reply_comment .reply span {
         font-size: 1.6rem;
         color: #686A6E;
-        font-weight: 700;
         cursor: pointer; }
         .photo_upload_post .photo_upload_post_comment .comment_box .main_comment .reply span:hover,
         .photo_upload_post .photo_upload_post_comment .comment_box .reply_comment .reply span:hover {
@@ -615,7 +1177,7 @@ nav.navbar {
       .post_with_photo .post_with_photo_header .profile_name p.date a {
         color: #65676b; }
   .post_with_photo .photo_post .post_text {
-    padding: .3rem 1rem; }
+    padding: .3rem 1.6rem; }
   .post_with_photo .photo_post .post_image img {
     width: 100%; }
   .post_with_photo .post_with_photo_comment {
@@ -650,7 +1212,8 @@ nav.navbar {
         background: #f0f2f5;
         display: inline-block;
         border-radius: 20px;
-        padding: .8rem 1.2rem; }
+        padding: .8rem 1.2rem;
+        margin-left: 1.3rem; }
         .post_with_photo .post_with_photo_comment .comment_box .main_comment .comment_text .name_text .author_name,
         .post_with_photo .post_with_photo_comment .comment_box .reply_comment .comment_text .name_text .author_name {
           font-size: 1.6rem;
@@ -687,7 +1250,6 @@ nav.navbar {
       .post_with_photo .post_with_photo_comment .comment_box .reply_comment .reply span {
         font-size: 1.6rem;
         color: #686A6E;
-        font-weight: 700;
         cursor: pointer; }
         .post_with_photo .post_with_photo_comment .comment_box .main_comment .reply span:hover,
         .post_with_photo .post_with_photo_comment .comment_box .reply_comment .reply span:hover {
@@ -769,3 +1331,171 @@ nav.navbar {
       font-size: 1.6rem; }
       .post_section .post_write .modal .modal-content .modal-footer button:focus {
         box-shadow: none; }
+
+.book-3d-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 600px; }
+
+@keyframes initAnimation {
+  0% {
+    transform: rotateY(0deg); }
+  100% {
+    transform: rotateY(-30deg); } }
+
+.book-3d {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(-30deg);
+  transition: 1s ease;
+  animation: 1s ease 0s 1 initAnimation; }
+
+.book-3d-container:hover .book-3d,
+.book-3d-container:focus .book-3d {
+  transform: rotateY(0deg); }
+
+.book-3d > :first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  width: 200px;
+  height: 300px;
+  transform: translateZ(25px);
+  background-color: #01060f;
+  border-radius: 0 2px 2px 0;
+  box-shadow: 5px 5px 20px #666; }
+
+.book-3d::before {
+  position: absolute;
+  content: ' ';
+  background-color: blue;
+  left: 0;
+  top: 3px;
+  width: 48px;
+  height: 294px;
+  transform: translateX(172px) rotateY(90deg);
+  background: linear-gradient(90deg, #fff 0%, #f9f9f9 5%, #fff 10%, #f9f9f9 15%, #fff 20%, #f9f9f9 25%, #fff 30%, #f9f9f9 35%, #fff 40%, #f9f9f9 45%, #fff 50%, #f9f9f9 55%, #fff 60%, #f9f9f9 65%, #fff 70%, #f9f9f9 75%, #fff 80%, #f9f9f9 85%, #fff 90%, #f9f9f9 95%, #fff 100%); }
+
+.book-3d::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: ' ';
+  width: 200px;
+  height: 300px;
+  transform: translateZ(-25px);
+  background-color: #01060f;
+  border-radius: 0 2px 2px 0;
+  box-shadow: -10px 0 50px 10px #666; }
+
+.profile_text .profile_text_edit-still button.edit_button {
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1.4rem;
+  border: 0; }
+
+.profile_text .profile_text_edit-form textarea.form-control {
+  width: 30rem;
+  margin: auto;
+  resize: none;
+  height: 12rem;
+  font-size: 1.6rem;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1); }
+  .profile_text .profile_text_edit-form textarea.form-control:focus {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1); }
+
+.profile_text .profile_text_edit-form .profile_text_edit-form_button .cancel_button,
+.profile_text .profile_text_edit-form .profile_text_edit-form_button .save_button {
+  font-size: 1.4rem;
+  margin: 0 5px; }
+
+.photo_update_modal .modal-header .modal-title {
+  margin: auto; }
+
+.photo_update_modal .modal-header .btn-close {
+  padding: 11px;
+  margin: 0;
+  background-color: #e4e6eb;
+  border-radius: 50%;
+  font-size: 1.5rem; }
+
+.photo_update_modal .modal-body label {
+  display: block; }
+
+.photo_update_modal .modal-body a {
+  text-decoration: none; }
+
+.photo_update_modal .modal-body .select_photo,
+.photo_update_modal .modal-body .upload_photo {
+  padding: 1rem;
+  border-radius: 7px;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  margin-bottom: .5rem;
+  transition: all .2s;
+  text-align: left; }
+  .photo_update_modal .modal-body .select_photo:hover,
+  .photo_update_modal .modal-body .upload_photo:hover {
+    background-color: #e9e6e6; }
+
+.photo_update_modal .modal-body .select_photo i {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #000;
+  background-color: #c1c3ca;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%; }
+
+.photo_update_modal .modal-body .select_photo span {
+  font-size: 1.6rem;
+  color: #000;
+  margin-left: .5rem; }
+
+.photo_update_modal .modal-body .upload_photo i {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #000;
+  background-color: #c1c3ca;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%; }
+
+.photo_update_modal .modal-body .upload_photo span {
+  font-size: 1.6rem;
+  color: #000;
+  margin-left: .5rem; }
+
+.photo_update_modal .modal-body .upload_photo input {
+  display: none; }
+
+.photo_update_modal .modal-body .album {
+  border-radius: 10px;
+  overflow: hidden; }
+  .photo_update_modal .modal-body .album .row [class^="col"] {
+    margin-bottom: .7rem; }
+  .photo_update_modal .modal-body .album img {
+    width: 100%;
+    cursor: pointer; }
+
+.albumheight.modal-body {
+  max-height: 48rem;
+  overflow: scroll; }
+
+@media all and (max-width: 768px) {
+  nav.navbarMenu .navContainer {
+    flex-direction: column; }
+  nav.navbarMenu .navContainer .menu_button {
+    margin: 0 auto 1rem; } }
+
+@media all and (max-width: 392px) {
+  .friends_part .all_friends .single_friend .friend_name {
+    margin-left: 2.7rem; } }
