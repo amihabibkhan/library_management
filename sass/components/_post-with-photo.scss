@@ -59,7 +59,7 @@
     .photo_post{ 
 
         .post_text{
-            padding: .3rem 1rem;
+            padding: .3rem 1.6rem;
         }
         .post_image{ 
             img{
@@ -110,6 +110,7 @@
                         display: inline-block;
                         border-radius: 20px;
                         padding: .8rem 1.2rem;
+                        margin-left: 1.3rem;
     
                         .author_name{
                             font-size: 1.6rem;
@@ -149,8 +150,7 @@
     
                     span{
                         font-size: 1.6rem;
-                        color: #686A6E;
-                        font-weight: 700;
+                        color: #686A6E; 
                         cursor: pointer;
                         
                         &:hover{

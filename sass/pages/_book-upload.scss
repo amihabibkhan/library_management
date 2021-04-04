@@ -1,0 +1,119 @@
+
+.book_upload_form{
+
+    .upload_form_title{
+        h2{
+            font-size: 2.5rem;
+
+        }
+    }
+
+    input,
+    textarea,
+    select{
+        font-size: 1.63rem;
+        margin-bottom: 20px; 
+        border-radius: 10px;
+        padding: 7px 7px;
+        &.form-select {
+            background-image: linear-gradient(rgba(148, 143, 143, 0.5),rgba(148,143,143,.5)),url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+            background-position: right;
+            background-size: 16px 50px;
+            
+            &:focus{
+                box-shadow: 0 0 9px 1px #e1e1e1;
+            }
+        }
+        
+        &.form-control:focus { 
+            box-shadow: 0 0 9px 1px #e1e1e1;
+        }
+    }
+
+    input[type="file"]{
+            padding: 3px 7px;
+    }
+    .tagAdd input{
+        padding: 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .form-control::file-selector-button{
+        padding: 8px 7px;
+    }
+
+    textarea{
+        border-radius: 10px;
+    }
+    .upload_left_input,
+    .upload_form_title{
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 7px;
+        box-shadow: $login_box_shadow_light;
+        
+        .writers_name,
+        .publishers_name{
+            .writers_name_input,
+            .publishers_name_input{
+                position: relative;
+            }
+            .name_suggestion{
+                background-color: #f0f2f5;
+                box-shadow: $login_box_shadow_light;
+                max-height: 250px;
+                overflow-y: scroll;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                z-index: 9;
+                ul{
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        border-bottom: 1px solid #fff;
+                        display: block;
+                        font-size: 1.6rem;
+                        padding: 5px;
+                        cursor: default;
+                        transition: all 0.2s;
+                        &:hover{
+                            background-color: #f9f9f9;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tagAdd .tag.label.label-info {
+            background: #0d6efd;
+            padding: 5px;
+            border-radius: 5px;
+            text-transform: capitalize; 
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .tagAdd .bootstrap-tagsinput {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+    .upload_right_input{
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 7px;
+        box-shadow: $login_box_shadow_light;
+        .submit_btn{
+            text-align: center;
+            input{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.margin_bottom{
+    margin-bottom: 100px;
+}

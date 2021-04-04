@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="font/fontawesome/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet"> 
+    <!-- Smart tab CSS -->
+    <link rel="stylesheet" href="css/smart_tab_all.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+
+    <!-- banner part start -->
+    <section class="profile-banner">
+        <div class="profile-banner__container">
+            <div class="profile__cover"> 
+                <div class="photo">
+                    <label for="profile">
+                        <div class="profile_image">
+                            <img src="images/profile-picture-use.jpg" alt="">  
+                        </div> 
+                        <input type="file" id="profile"><i class="fas fa-camera"></i>
+                    </label>
+                </div>
+                <div class="cover_upload">
+                    <input type="file" id="cover_phpto">
+                    <label for="cover_phpto">
+                         <i class="fas fa-camera me-sm-2 mx-auto"></i> 
+                         <span class="d-sm-inline d-none">Edit cover Photo</span> 
+                    </label>
+                </div>
+            </div>
+            <div class="profile_text">
+                <h2 class="name">Md minhaj mia</h2>
+                <div class="profile_text_edit-still" id="profile_edit_button">
+                    <p class="bio">I am an imran khan</p>
+                    <button class="edit_button btn btn-primary" onclick="show_edit_form()">ইডিট করুন</button>
+                </div>
+                <div class="profile_text_edit-form d-none" id="profile_edit_form">
+                    <textarea name="" id="" class="form-control">ঘুম থেকে উঠে সকালেই যদি নতুন কিছু শিখে ফেলি তাহলে সারাদিন আমার মহা আনন্দে কাটে।</textarea>
+                    <p>22 characters remaining</p>
+                    <div class="profile_text_edit-form_button">
+                        <button class="cancel_button btn btn-primary" onclick="show_edit_button_container()">ক্যান্সেল করুন</button>
+                        <button class="save_button btn btn-primary" onclick="show_edit_button_container()">সেইভ করুন</button>
+                    </div>
+                </div>  
+            </div>
+            <hr>
+            <!-- menu start-->
+            
+            <nav class="navbarMenu"> 
+                  <div class="navContainer" id="">
+                    <ul class="custom_menu">
+                        <li><a href="profile.html" class="menu-item">posts</a></li>
+                        <li><a href="edit_details.html" class="menu-item">about</a></li>
+                        <li><a href="friends.html" class="menu-item">friends</a></li>
+                        <li><a href="bookUpload.html" class="menu-item">books</a></li>
+                        <li><a href="#" class="menu-item">photos</a></li>
+                     </ul>
+                     <div class="menu_button">
+                         <a href="bookUpload.html" class="add_to_book"><i class="fas fa-plus-circle"></i>Add New Book</a>
+                         <a href="edit_profile.html" class="edit_profile"><i class="fas fa-pen"></i>Edit Profile</a> 
+                     </div>
+                  </div> 
+              </nav>
+           
+            <!-- menu end-->
+
+        </div>
+    </section>
+    <!-- banner part end --> 
+
+    <!-- Main content section start -->
+    <section class="main_content">
+        <div class="main_container">
+            <div class="edit_details">
+                <div class="edit_info">
+                    <div id="smarttab" class="row">
+                    <!-- Tabs -->
+                    <div class="col-sm-4"> 
+                        <ul class="nav">
+                            <li>
+                                <h2 class="edit_details_title">About</h2>
+                            </li>
+                            <li>
+                                <a class="nav-link active"  href="#tab-1">Overview</a>
+                            </li>
+                            <li>
+                                <a class="nav-link active"  href="#tab-2">Work and Education</a>
+                            </li>
+                            <li>
+                                <a class="nav-link active"  href="#tab-3">Places Lived</a>
+                            </li>
+                            <li>
+                                <a class="nav-link active"  href="#tab-4">Contact and Basic Info</a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                    <!-- Tabbed Content -->
+                    <div class="col-sm-8 tab_details">
+                        <div class="tab-content">
+                            <div id="tab-1" class="tab-pane" role="tabpanel">
+                                <div class="overview">
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <div class="overview_details">
+                                                <div class="overview_details_icon">
+                                                    <i class="fas fa-briefcase"></i>
+                                                </div>
+                                                <div class="overview_text">
+                                                    <p>Works at Student</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="overview_icon">
+                                                <div class="privacy_icon">
+                                                    <i class="fas fa-lock"></i>
+                                                </div>
+                                                <div class="editor_icon">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="overview">
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <div class="overview_details">
+                                                <div class="overview_details_icon">
+                                                    <i class="fas fa-graduation-cap"></i>
+                                                </div>
+                                                <div class="overview_text">
+                                                    <p>Studied Software programming at Shahjalal University of Science & Technology, Sylhet</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="overview_icon">
+                                                <div class="privacy_icon">
+                                                    <i class="fas fa-globe-asia"></i>
+                                                </div>
+                                                <div class="editor_icon">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="overview">
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <div class="overview_details">
+                                                <div class="overview_details_icon">
+                                                    <i class="fas fa-graduation-cap"></i>
+                                                </div>
+                                                <div class="overview_text">
+                                                    <p>Studied Computer Science at University of Dhaka</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="overview_icon">
+                                                <div class="privacy_icon">
+                                                    <i class="fas fa-globe-asia"></i>
+                                                </div>
+                                                <div class="editor_icon">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="overview">
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <div class="overview_details">
+                                                <div class="overview_details_icon">
+                                                    <i class="fas fa-home"></i>
+                                                </div>
+                                                <div class="overview_text">
+                                                    <p>Lives in Dhaka, Bangladesh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="overview_icon">
+                                                <div class="privacy_icon">
+                                                    <i class="fas fa-globe-asia"></i>
+                                                </div>
+                                                <div class="editor_icon">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="overview">
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <div class="overview_details">
+                                                <div class="overview_details_icon">
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                </div>
+                                                <div class="overview_text">
+                                                    <p>From Pirojpur, Chittagong, Bangladesh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="overview_icon">
+                                                <div class="privacy_icon">
+                                                    <i class="fas fa-lock"></i>
+                                                </div>
+                                                <div class="editor_icon">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="overview">
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <div class="overview_details">
+                                                <div class="overview_details_icon">
+                                                    <i class="fas fa-heart"></i>
+                                                </div>
+                                                <div class="overview_text">
+                                                    <p>Single</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="overview_icon">
+                                                <div class="privacy_icon">
+                                                    <i class="fas fa-globe-asia"></i>
+                                                </div>
+                                                <div class="editor_icon">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="overview">
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <div class="overview_details">
+                                                <div class="overview_details_icon">
+                                                    <i class="fas fa-phone-alt"></i>
+                                                </div>
+                                                <div class="overview_text">
+                                                    <p>01720202020</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="overview_icon">
+                                                <div class="privacy_icon">
+                                                    <i class="fas fa-lock"></i>
+                                                </div>
+                                                <div class="editor_icon">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-2" class="tab-pane" role="tabpanel">
+                                <h2 class="add_more_title">Work</h2>
+                                <div class="add_more_item">
+                                    <div id="main-container">
+        
+                                        <a id="add-more" class="btn btn-primary add_button" href="javascript:;"><i class="fas fa-plus"></i>কাজের ক্ষেত্র যুক্ত করুন</a>
+                                        <div class="container-item">
+                                          <!-- <label class="control-label" for="address_line_one_0">Address</label>
+                                          <input type="text" id="address_line_one_0" name="Address[0][address_line]">
+                                          <textarea name="Address[0][desc]" id="desc_0"></textarea>
+                                          ... More Form Fields Here ... -->
+                                          <form action="">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <input type="text" class="form-control" placeholder="institute">
+                                                </div>
+                                                <div class="col-12">
+                                                    <a href="javascript:void(0)" class="remove-item btn btn-warning bottom_btn">Remove</a>
+                                                    <a href="javascript:void(0)" class="remove-item btn btn-success bottom_btn">Save</a>
+                                                </div>
+                                            </div>
+                                          </form> 
+                                        </div> 
+                                      </div>
+                                </div>
+  
+                                <div class="overview">
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <div class="overview_details">
+                                                <div class="overview_details_icon">
+                                                    <i class="fas fa-briefcase"></i>
+                                                </div>
+                                                <div class="overview_text">
+                                                    <p>Works at Student</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="overview_icon">
+                                                <div class="privacy_icon">
+                                                    <i class="fas fa-lock"></i>
+                                                </div>
+                                                <div class="editor_icon">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-3" class="tab-pane" role="tabpanel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, nostrum molliuisquam fuga at in iusto.</p>
+                            </div>
+                            <div id="tab-4" class="tab-pane" role="tabpanel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, nostrum molliuisquam fuga at in iusto.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main content section end -->
+         
+     
+
+    <!-- jQuery js -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Smart tabs JS -->
+    <script src="js/jquery.smartTab.min.js"></script>
+    <!-- cloneData js -->
+    <script src="js/cloneData.js"></script>
+
+ 
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        // Smart tab js
+        $(document).ready(function(){
+            $('#smarttab').smartTab({
+                orientation: 'vertical',
+                transition: {
+                    animation: 'fade',
+                    speed: '400'
+                }
+            });
+        });
+
+        $('#add-more').cloneData({
+
+        // container to hold the dulicated form fields
+        mainContainerId: 'main-container',
+
+        // Which you want to clone
+        cloneContainer: 'container-item',
+
+        // CSS lcass of remove button
+        // removeButtonClass: 'remove-item', 
+
+        // // 0 = unlimited
+        maxLimit: 1, 
+
+        // // 0 = unlimited
+        minLimit: 0,
+        removeConfirm: true,    
+
+        });
+      
+    </script> 
+       <!-- Custom js -->
+       <script src="js/script.js"></script>
+
+</body>
+</html>

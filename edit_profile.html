@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="font/fontawesome/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet"> 
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- menu section start --> 
+    <section class="main_nav">
+        <nav class="navbarMenu nab_container"> 
+            <div class="navContainer" id="">
+                <ul class="custom_menu">
+                    <li><a href="profile.html" class="menu-item">posts</a></li>
+                    <li><a href="edit_details.html" class="menu-item">about</a></li>
+                    <li><a href="friends.html" class="menu-item">friends</a></li>
+                    <li><a href="bookUpload.html" class="menu-item">books</a></li>
+                    <li><a href="#" class="menu-item">photos</a></li>
+                 </ul>
+                 <div class="menu_button">
+                     <a href="bookUpload.html" class="add_to_book"><i class="fas fa-plus-circle"></i>Add New Book</a>
+                     <a href="edit_profile.html" class="edit_profile"><i class="fas fa-pen"></i>Edit Profile</a> 
+                 </div>
+            </div> 
+        </nav>
+    </section>
+    <!-- menu section end -->
+     
+
+
+    <!-- edit profile section start -->
+    <section class="edit_profile">
+        <div class="edit_container">
+
+          <div class="edit_header_close text-center">
+              <h2 class="header">Edit Profile</h2> 
+          </div>
+          <hr>
+
+          <div class="row">
+              <div class="col-6">
+                  <h3 class="profile_picture">Profile Picture</h3>
+              </div>
+              <div class="col-6 text-end">
+                 <a href="#" data-bs-toggle="modal" data-bs-target="#photoUpload" class="edit">ইডিট করুন</a>
+              </div>
+          </div>
+
+          <div class="picture">
+              <img src="images/profile-picture-use.jpg" alt="">
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-6">
+                <h3 class="cover_picture">Cover Photo</h3>
+            </div>
+            <div class="col-6 text-end">
+               <a href="#" data-bs-toggle="modal" data-bs-target="#photoUpload" class="edit">ইডিট করুন</a>
+ 
+            <!-- Modal -->
+            <div class="photo_update_modal">
+                <div class="modal fade" id="photoUpload" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+    
+                        <div class="modal-header">
+                        <h2 class="modal-title" id="staticBackdropLabel">কভার ফটো আপডেট করুন</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+    
+                        <div class="modal-body">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#photoAlbum"  class="select_link">
+                               <div class="select_photo">
+                                    <i class="far fa-images"></i>
+                                    <span>ছবি বাছাই  করুন</span>
+                                </div> 
+                            </a>
+                            <label for="upload_photo" class="upload_label"> 
+                                <div class="upload_photo"> 
+                                    <i class="fas fa-upload"></i>
+                                    <span>ছবি আপলোড</span>
+                                    <input id="upload_photo" type="file"> 
+                                </div>
+                            </label>
+                        </div> 
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+         <!-- Photos album modal start-->
+         <div class="photo_update_modal">
+                <div class="modal fade" id="photoAlbum" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+    
+                        <div class="modal-header">
+                        <h2 class="modal-title" id="staticBackdropLabel">কভার ফটো আপডেট করুন</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+    
+                        <div class="albumheight modal-body">
+                            <div class="album">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="images/fujael.jpg" alt="fujael">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="images/fujael.jpg" alt="fujael">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="images/fujael.jpg" alt="fujael">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="images/fujael.jpg" alt="fujael">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="images/fujael.jpg" alt="fujael">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="images/fujael.jpg" alt="fujael">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="images/fujael.jpg" alt="fujael">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="images/fujael.jpg" alt="fujael">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="images/fujael.jpg" alt="fujael">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="images/fujael.jpg" alt="fujael">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="images/fujael.jpg" alt="fujael">
+                                    </div>
+                                     
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    </div>
+                </div>
+            </div>
+          <!-- Photos album modal end-->
+  
+
+            </div>
+          </div>
+
+          <div class="background_img">
+            <img src="images/cover_bg.jpg" alt="">
+          </div>
+
+          <div class="profile_text">
+            <div class="row mt-5">
+                <div class="col-6">
+                    <h3 class="biography">Bio</h3>
+                </div>
+                <div class="col-6 text-end">
+                    <div class="profile_text_edit-still" id="profile_edit_button"> 
+                        <button class="edit_button edit" onclick="show_edit_form()">ইডিট করুন</button>
+                    </div>
+                </div>
+              </div>
+    
+              <div class="bio_description">
+                <div class="profile_text_edit-form d-none" id="profile_edit_form">
+                    <textarea name="" id="" class="form-control">ঘুম থেকে উঠে সকালেই যদি নতুন কিছু শিখে ফেলি তাহলে সারাদিন আমার মহা আনন্দে কাটে।</textarea>
+                    <p>22 characters remaining</p>
+                    <div class="profile_text_edit-form_button">
+                        <button class="cancel_button btn btn-primary" onclick="show_edit_button_container()">ক্যান্সেল করুন</button>
+                        <button class="save_button btn btn-primary" onclick="show_edit_button_container()">সেইভ করুন</button>
+                    </div>
+                </div> 
+              </div>
+          </div>
+
+          <div class="row my-5">
+            <div class="col-6">
+                <h3 class="customize_into">Customize You Intro</h3>
+            </div>
+            <div class="col-6 text-end">
+               <a href="edit_details.html" class="edit">ইডিট করুন</a>
+            </div>
+          </div>
+
+          <div class="intro_part">
+            <div class="intro_1 mb-4">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Studies at</span>
+                <a href="#">university of Dhaka</a>
+            </div>
+            <div class="intro_2 mb-4">
+                <i class="fas fa-graduation-cap"></i> 
+                <span>Studied at</span>
+                <a href="#">university of Dhaka</a>
+            </div>
+            <div class="intro_3 mb-4">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Went to palashikura janata high school </span>
+            </div>
+            <div class="intro_4 mb-4">
+                <i class="fas fa-map-marker-alt"></i> 
+                <span>From</span>
+                <a href="#">sherpur,Mymenshing, Bangladesh</a>
+            </div>
+            <div class="intro_5 mb-4">
+                <i class="fas fa-heart"></i>
+                <span>Single</span>
+            </div>
+            <div class="intro_6 mb-4">
+                <i class="fas fa-clock"></i>
+                <span>Joined January 2021</span>
+            </div>
+          </div>
+
+          <div class="about_info">
+            <a href="edit_details.html" class="about_info_edit">Edit your about info</a>
+          </div>
+
+        </div>
+    </section>
+    <!-- edit profile section end -->
+ 
+ 
+
+
+
+
+
+
+
+
+
+         
+     
+
+    <!-- jQuery js -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

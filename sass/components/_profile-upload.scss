@@ -127,6 +127,7 @@
                         display: inline-block;
                         border-radius: 20px;
                         padding: .8rem 1.2rem;
+                        margin-left: 1.3rem;
     
                         .author_name{
                             font-size: 1.6rem;
@@ -145,11 +146,11 @@
                     .hide_option{
                         margin-left: .3rem;
                         visibility: hidden;
-                        opacity: 0;
+                        opacity: 0; 
     
                         span{
                             width: 30px;
-                            height: 30px;
+                            height: 30px; 
                             border-radius: 50%;
                             background-color: #f0f2f5;
                             display: flex;
@@ -166,8 +167,7 @@
     
                     span{
                         font-size: 1.6rem;
-                        color: #686A6E;
-                        font-weight: 700;
+                        color: #686A6E; 
                         cursor: pointer;
                         
                         &:hover{

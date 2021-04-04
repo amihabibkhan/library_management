@@ -1,73 +1,113 @@
 // navigation start
-nav.navbar{
+nav.navbarMenu{
     padding: 0;
-    ul.custom_menu{
-        
-        li{
+
+    .navContainer{
+        max-width: $signup_login_width;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        ul.custom_menu{
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 0;
+            li{
+                
+            }
             
+            li a{
+                text-decoration: none;
+                color: #66686C;
+                text-transform: capitalize;
+                font-size: 1.6rem;
+                padding: 1.6rem;
+                display: block;
+                border-radius: 5px;
+                border-bottom: 5px solid transparent;
+                outline: 0;
+                transition: all 0.3s;
+                &:hover{
+                    background-color: #dfe2e6;
+                }
+                &.active{
+                    color: #1876f2;
+                    border-radius: 0;
+                    border-color: #1876f2;
+                    &:hover{
+                        background-color: transparent;
+                    }
+                }
+            }    
         }
         
-        li a{
-            text-decoration: none;
-            color: #66686C;
-            text-transform: capitalize;
-            font-size: 1.6rem;
-            padding: 1.6rem;
-            display: block;
-            border-radius: 5px;
-            border-bottom: 5px solid transparent;
-            outline: 0;
-            transition: all 0.3s;
-            &:hover{
-                background-color: #dfe2e6;
-            }
-            &.active{
-                color: #1876f2;
-                border-radius: 0;
-                border-color: #1876f2;
+        .menu_button{
+            margin-left: auto;
+            margin-right: 2rem;
+            .add_to_book{
+                font-size: 1.6rem;
+                background: #1876f2;
+                border-radius: 5px; 
+                padding: 5px 1rem;
+                display: inline-block;
+                color: #fff;
+                text-decoration: none;
+                transition: all .3s;
+                margin-right: .5rem;
+    
                 &:hover{
-                    background-color: transparent;
+                    background: #1058b6;
+                }
+                i{
+                    margin-right: 5px;
+                }
+    
+                
+            }
+            .edit_profile{
+                font-size: 1.6rem;
+                background: #1876f2;
+                border-radius: 5px; 
+                padding: 7px 2rem;
+                color: #fff;
+                text-decoration: none;
+                transition: all .3s;
+    
+                &:hover{
+                    background: #1058b6;
+                }
+                i{
+                    margin-right: 5px;
                 }
             }
-        }    
-    }
-    
-    .menu_button{
-
-        .add_to_book{
-            font-size: 1.6rem;
-            background: #1876f2;
-            border-radius: 5px; 
-            padding: 7px 2rem;
-            color: #fff;
-            text-decoration: none;
-            transition: all .3s;
-            margin-right: .5rem;
-
-            &:hover{
-                background: #1058b6;
-            }
-            i{
-                margin-right: 5px;
-            }
-
-            
-        }
-        .edit_profile{
-            font-size: 1.6rem;
-            background: #1876f2;
-            border-radius: 5px; 
-            padding: 7px 2rem;
-            color: #fff;
-            text-decoration: none;
-            transition: all .3s;
-
-            &:hover{
-                background: #1058b6;
-            }
-            i{
-                margin-right: 5px;
-            }
         }
     }
+}
+
+
+.main_nav{
+    background-color: #fff;
+
+
+    .nab_container{
+        max-width: $signup_login_width;
+        margin: auto;
+    }
+}
+
+.stikey_menu{
+    position: fixed;
+    left: 0; 
+    right: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: $login_box_shadow_light;
+    z-index: 99;
+
+    .stikey_container{
+        max-width: $signup_login_width;
+        margin: auto;
+    }
+
 }

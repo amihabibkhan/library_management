@@ -1,0 +1,15 @@
+
+@media all and (max-width: 768px){
+    nav.navbarMenu .navContainer { 
+        flex-direction: column;
+    }
+    nav.navbarMenu .navContainer .menu_button { 
+        margin: 0 auto 1rem;
+    }
+}
+
+@media all and (max-width: 392px){
+    .friends_part .all_friends .single_friend .friend_name { 
+        margin-left: 2.7rem;
+    }
+}

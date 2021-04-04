@@ -12,10 +12,21 @@
 @import 'pages/login';
 @import 'pages/profile';
 @import 'pages/signup';
+@import 'pages/book-upload';
+@import 'pages/friends';
+@import 'pages/main-library';
+@import 'pages/book-dtails';
+@import 'pages/edit-details';
+@import 'pages/editprofile';
 
 @import 'components/sidebar';
 @import 'components/post';
 @import 'components/profile-upload';
 @import 'components/post-with-photo';
 @import 'components/post-modal';
+@import 'components/3d-book';
+@import 'components/bio-edit';
+@import 'components/photo_update-modal';
+
+@import 'responsive/responsive';
 

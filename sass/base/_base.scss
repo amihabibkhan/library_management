@@ -34,10 +34,14 @@ p,a,span,i,label{
 }
 body{
     background: $bg_color;
-    font-family : 'bangla-font';
+    font-family : 'bangla-font_2'; 
 }
 // bangla font
 @font-face{
-    font-family : 'bangla-font';
+    font-family : 'bangla-font_1';
     src: url('../font/HindSiliguri-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family : 'bangla-font_2';
+    src: url('../font/RuhulAminUnicode.ttf') format('truetype');
 }
