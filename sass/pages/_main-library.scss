@@ -57,7 +57,7 @@
             }
             &:hover .expand_book i{
                 color: #ffb607;
-                font-size: 3rem;
+                font-size: 2.5rem;
             } 
             .book{
                 height: 250px; 
@@ -84,14 +84,15 @@
                 visibility: hidden;
                 transition: all 0.3s;
                 a {
-                    height: 48px;
-                    width: 50px;
+                    height: 44px;
+                    width: 45px;
                     background: #f9f9f9;
                     border-radius: 50%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     text-decoration: none;
+                    margin: 0 2px;
                 }
 
                 i{
@@ -100,6 +101,34 @@
                     transition: all 0.5s;
                 }
             }
+        }
+    }
+}
+
+.modal-body{
+    .lending_info{
+        .user_form{
+            background-color: #fff;
+            border-radius: 7px;
+            box-shadow: $login_box_shadow_light;
+            padding: .5rem 2rem;
+            .personal_info{
+                input{
+                    font-size: 1.6rem;
+                    &:not(:last-child){
+                        margin-bottom: 12px;
+                    }
+                    &:focus{
+                        box-shadow: unset;
+                    }
+                }
+                .input-group{
+                    span{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            
         }
     }
 }
