@@ -1,0 +1,16 @@
+.lending_info{
+    .book_info{
+        table{
+            tr{
+                td{
+                    button{
+                        font-size: 1.6rem;
+                        &:focus{
+                            box-shadow: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

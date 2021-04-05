@@ -1,0 +1,27 @@
+.request_container{
+    max-width: 60rem;
+    margin: 0 auto;
+    .lending_info{
+        .user_form{
+            background-color: #fff;
+            border-radius: 7px;
+            box-shadow: $login_box_shadow_light;
+            padding: 2rem;
+            .personal_info{
+                input{
+                    font-size: 1.6rem;
+                    margin-bottom: 12px;
+                    &:focus{
+                        box-shadow: unset;
+                    }
+                }
+                .input-group{
+                    span{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            
+        }
+    }
+}

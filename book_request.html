@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="font/fontawesome/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet"> 
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- menu section start --> 
+    <section class="main_nav">
+        <nav class="navbarMenu nab_container"> 
+            <div class="navContainer" id="">
+                <ul class="custom_menu">
+                    <li><a href="profile.html" class="menu-item">posts</a></li>
+                    <li><a href="edit_details.html" class="menu-item">about</a></li>
+                    <li><a href="friends.html" class="menu-item">friends</a></li>
+                    <li><a href="bookUpload.html" class="menu-item">books</a></li>
+                    <li><a href="#" class="menu-item">photos</a></li>
+                 </ul>
+                 <div class="menu_button">
+                     <a href="bookUpload.html" class="add_to_book"><i class="fas fa-plus-circle"></i>Add New Book</a>
+                     <a href="edit_profile.html" class="edit_profile"><i class="fas fa-pen"></i>Edit Profile</a> 
+                 </div>
+            </div> 
+        </nav>
+    </section>
+    <!-- menu section end -->
+     
+
+
+    <!-- edit profile section start -->
+    <section class="main_content">
+        <div class="request_container">
+            <div class="lending_info">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="lending_user_info">
+                            <div class="user_form">
+                                <form action="">
+                                    <div class="personal_info">
+                                        <input class="form-control" type="text" placeholder="Your name">
+                                        <input class="form-control" type="text" placeholder="Your phone">
+                                        <input class="form-control" type="email" placeholder="Your email">
+                                        <input class="form-control" type="text" placeholder="Your address">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon3">Receiving date</span>
+                                            <input type="date" class="form-control mb-0" id="basic-url" aria-describedby="basic-addon3">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon3">Returning date</span>
+                                            <input type="date" class="form-control mb-0" id="basic-url" aria-describedby="basic-addon3">
+                                        </div>
+                                        <input class="btn btn-primary w-100" type="submit" value="রিকুয়েস্ট পাঠান">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- edit profile section end -->
+ 
+
+     
+
+    <!-- jQuery js -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

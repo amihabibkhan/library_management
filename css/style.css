@@ -574,7 +574,7 @@ nav.navbarMenu {
       visibility: visible; }
     .library_part .all_books .single_book:hover .expand_book i {
       color: #ffb607;
-      font-size: 3rem; }
+      font-size: 2.5rem; }
     .library_part .all_books .single_book .book {
       height: 250px;
       overflow: hidden; }
@@ -597,18 +597,33 @@ nav.navbarMenu {
       visibility: hidden;
       transition: all 0.3s; }
       .library_part .all_books .single_book .expand_book a {
-        height: 48px;
-        width: 50px;
+        height: 44px;
+        width: 45px;
         background: #f9f9f9;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        text-decoration: none; }
+        text-decoration: none;
+        margin: 0 2px; }
       .library_part .all_books .single_book .expand_book i {
         color: #fff;
         font-size: .1rem;
         transition: all 0.5s; }
+
+.modal-body .lending_info .user_form {
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
+  padding: .5rem 2rem; }
+  .modal-body .lending_info .user_form .personal_info input {
+    font-size: 1.6rem; }
+    .modal-body .lending_info .user_form .personal_info input:not(:last-child) {
+      margin-bottom: 12px; }
+    .modal-body .lending_info .user_form .personal_info input:focus {
+      box-shadow: unset; }
+  .modal-body .lending_info .user_form .personal_info .input-group span {
+    font-size: 1.6rem; }
 
 .book_details {
   background-color: #fff;
@@ -852,6 +867,81 @@ nav.navbarMenu {
   padding: 0.5rem 1rem;
   background-color: #f7f7f7;
   border-radius: 0.5rem; }
+
+.lending_container {
+  max-width: 100rem;
+  margin: 0 auto; }
+  .lending_container .lending_info .book_info {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 7px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-left: .3rem;
+    margin-bottom: 1.5rem; }
+    .lending_container .lending_info .book_info table {
+      font-size: 1.6rem; }
+      .lending_container .lending_info .book_info table tr td {
+        vertical-align: middle; }
+        .lending_container .lending_info .book_info table tr td .book_img img {
+          max-height: 130px; }
+        .lending_container .lending_info .book_info table tr td .icon {
+          height: 25px;
+          width: 25px;
+          border-radius: 50%;
+          line-height: 25px;
+          box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1); }
+      .lending_container .lending_info .book_info table tr .name_and_title {
+        width: 250px; }
+        .lending_container .lending_info .book_info table tr .name_and_title .book_title {
+          font-size: 1.8rem;
+          font-weight: 600; }
+        .lending_container .lending_info .book_info table tr .name_and_title .author_name {
+          font-size: 1.5rem; }
+  .lending_container .lending_info .lending_user_info {
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1); }
+    .lending_container .lending_info .lending_user_info .user_search {
+      background-color: #0b5ed7;
+      padding: 2rem;
+      border-radius: 7px 7px 0 0; }
+      .lending_container .lending_info .lending_user_info .user_search input {
+        font-size: 1.6rem;
+        border-radius: 50px;
+        padding-left: 10px; }
+        .lending_container .lending_info .lending_user_info .user_search input:focus {
+          box-shadow: unset; }
+      .lending_container .lending_info .lending_user_info .user_search span {
+        border-radius: 0 50px 50px 0; }
+    .lending_container .lending_info .lending_user_info .user_form {
+      padding: 1rem 2rem 2rem; }
+      .lending_container .lending_info .lending_user_info .user_form input {
+        font-size: 1.6rem; }
+        .lending_container .lending_info .lending_user_info .user_form input:not(:last-child) {
+          margin-bottom: 12px; }
+        .lending_container .lending_info .lending_user_info .user_form input:focus {
+          box-shadow: unset; }
+
+.lending_info .book_info table tr td button {
+  font-size: 1.6rem; }
+  .lending_info .book_info table tr td button:focus {
+    box-shadow: unset; }
+
+.request_container {
+  max-width: 60rem;
+  margin: 0 auto; }
+  .request_container .lending_info .user_form {
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
+    padding: 2rem; }
+    .request_container .lending_info .user_form .personal_info input {
+      font-size: 1.6rem;
+      margin-bottom: 12px; }
+      .request_container .lending_info .user_form .personal_info input:focus {
+        box-shadow: unset; }
+    .request_container .lending_info .user_form .personal_info .input-group span {
+      font-size: 1.6rem; }
 
 .sidebar {
   background-color: #fff;
